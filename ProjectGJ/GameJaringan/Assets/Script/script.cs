@@ -165,7 +165,12 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            // Pastikan semua pemain dalam room memuat scene GamePlay
+            if (!PhotonNetwork.IsMessageQueueRunning)
+            {
+                Debug.LogWarning("Photon message queue is paused!");
+                return;
+            }
+
             PhotonNetwork.LoadLevel("GamePlay");
         }
         else
@@ -173,7 +178,6 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
             Debug.LogWarning("Hanya Master Client yang dapat memulai permainan!");
         }
     }
-
 
     public override void OnCreatedRoom()
     {
