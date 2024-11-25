@@ -64,15 +64,27 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     public void OnRoomCreateButtonClicked()
     {
         string NamaRoom = NamaRoomInputField.text;
+        string MaxPlayerInput = maxPlayerInputField.text;
 
+        // Validasi Nama Room
         if (string.IsNullOrEmpty(NamaRoom))
         {
-            NamaRoom = "Room " + Random.Range(1000, 10000);
+            NamaRoomInputField.placeholder.GetComponent<Text>().text = "Nama Room Tidak Boleh Kosong!";
+            NamaRoomInputField.placeholder.GetComponent<Text>().color = Color.red;
+            return;
+        }
+
+        // Validasi Jumlah Pemain
+        if (string.IsNullOrEmpty(MaxPlayerInput) || !int.TryParse(MaxPlayerInput, out int maxPlayers) || maxPlayers <= 0)
+        {
+            maxPlayerInputField.placeholder.GetComponent<Text>().text = "Jumlah Pemain Harus Valid!";
+            maxPlayerInputField.placeholder.GetComponent<Text>().color = Color.red;
+            return;
         }
 
         RoomOptions roomOptions = new RoomOptions
         {
-            MaxPlayers = (byte)int.Parse(maxPlayerInputField.text)
+            MaxPlayers = (byte)maxPlayers
         };
 
         PhotonNetwork.CreateRoom(NamaRoom, roomOptions);
