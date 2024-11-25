@@ -64,27 +64,15 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     public void OnRoomCreateButtonClicked()
     {
         string NamaRoom = NamaRoomInputField.text;
-        string MaxPlayerInput = maxPlayerInputField.text;
 
-        // Validasi Nama Room
         if (string.IsNullOrEmpty(NamaRoom))
         {
-            NamaRoomInputField.placeholder.GetComponent<Text>().text = "Nama Room Tidak Boleh Kosong!";
-            NamaRoomInputField.placeholder.GetComponent<Text>().color = Color.red;
-            return;
-        }
-
-        // Validasi Jumlah Pemain
-        if (string.IsNullOrEmpty(MaxPlayerInput) || !int.TryParse(MaxPlayerInput, out int maxPlayers) || maxPlayers <= 0)
-        {
-            maxPlayerInputField.placeholder.GetComponent<Text>().text = "Jumlah Pemain Harus Valid!";
-            maxPlayerInputField.placeholder.GetComponent<Text>().color = Color.red;
-            return;
+            NamaRoom = "Room " + Random.Range(1000, 10000);
         }
 
         RoomOptions roomOptions = new RoomOptions
         {
-            MaxPlayers = (byte)maxPlayers
+            MaxPlayers = (byte)int.Parse(maxPlayerInputField.text)
         };
 
         PhotonNetwork.CreateRoom(NamaRoom, roomOptions);
@@ -122,7 +110,7 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
 
             daftarEntriRoomGameobject.transform.Find("NamaRoomText").GetComponent<Text>().text = room.Name;
             daftarEntriRoomGameobject.transform.Find("MaksPlayerText").GetComponent<Text>().text =
-                room.PlayerCount + " / " + room.MaxPlayers;
+                room.PlayerCount + " /10" + room.MaxPlayers;
 
             daftarEntriRoomGameobject.transform.Find("TombolLihatDetailRoom").GetComponent<Button>()
                 .onClick.AddListener(() => OnShowJoinRoomPanel(room.Name));
@@ -149,12 +137,12 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         if (roomInfo != null)
         {
             namaRoomJoinText.text = "Room: " + roomName;
-            infoPlayerJoinText.text = "Players: " + roomInfo.PlayerCount + " / " + roomInfo.MaxPlayers;
+            infoPlayerJoinText.text = "Players: " + roomInfo.PlayerCount + " /10" + roomInfo.MaxPlayers;
         }
         else
         {
             namaRoomJoinText.text = "Room: " + roomName;
-            infoPlayerJoinText.text = "Players: 1 / 50";
+            infoPlayerJoinText.text = "Players:  /10";
         }
 
         // Aktifkan tombol Mulai jika pemain adalah Master Client
