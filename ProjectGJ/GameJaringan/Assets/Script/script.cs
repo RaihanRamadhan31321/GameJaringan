@@ -165,9 +165,15 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.LoadLevel("GamePlay"); // Pastikan nama scene sesuai
+            // Pastikan semua pemain dalam room memuat scene GamePlay
+            PhotonNetwork.LoadLevel("GamePlay");
+        }
+        else
+        {
+            Debug.LogWarning("Hanya Master Client yang dapat memulai permainan!");
         }
     }
+
 
     public override void OnCreatedRoom()
     {
