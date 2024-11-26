@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 5881674978353681428}
   - component: {fileID: 6092782466054197539}
   - component: {fileID: 1770884414109214031}
-  - component: {fileID: 4773160473929271236}
-  - component: {fileID: 7737975462885569681}
-  - component: {fileID: 3893396390957104385}
-  - component: {fileID: 5308481173942499608}
+  - component: {fileID: 2623016507306765503}
+  - component: {fileID: 5554342941124439107}
+  - component: {fileID: 3833176450868264280}
   m_Layer: 0
   m_Name: Karakter-baju merah
   m_TagString: Player
@@ -157,7 +156,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.03, y: 8.87}
   m_EdgeRadius: 0
---- !u!50 &4773160473929271236
+--- !u!50 &2623016507306765503
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -183,8 +182,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &7737975462885569681
+  m_Constraints: 4
+--- !u!114 &5554342941124439107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,15 +192,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3926102547734112975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80f56f77312706a4da27ad665be1b230, type: 3}
+  m_Script: {fileID: 11500000, guid: e9cbd9420ba317b4981986e681a63019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
-  runSpeed: 8
-  ballPrefab: {fileID: 0}
-  ballHoldPoint: {fileID: 0}
-  hitIndicator: {fileID: 0}
---- !u!114 &3893396390957104385
+  runSpeed: 20
+  animator: {fileID: 6092782466054197539}
+--- !u!114 &3833176450868264280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,27 +216,10 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents:
-  - {fileID: 5308481173942499608}
+  ObservedComponents: []
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &5308481173942499608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3926102547734112975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!1 &8878033894455711640
 GameObject:
   m_ObjectHideFlags: 0
