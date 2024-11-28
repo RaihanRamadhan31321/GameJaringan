@@ -108,7 +108,406 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Karakter-02_0
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2922
+        width: 699
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bd100ae7fd0394aba6b7915b923186
+      internalID: -1730692395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_1
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 2941
+        width: 699
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eb6d0cc5f3bdd4ab8c7a1827d96aaa
+      internalID: 1357095445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_2
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 2957
+        width: 699
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ae88494b49223408207a48cc2e71aa
+      internalID: -1224704227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_3
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 2957
+        width: 699
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2d7f516f72c6246a1af29715b774d1
+      internalID: -1551794949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_4
+      rect:
+        serializedVersion: 2
+        x: 3734
+        y: 2922
+        width: 700
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503e719c28d68c848a263527bc3e2eef
+      internalID: 242382152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_5
+      rect:
+        serializedVersion: 2
+        x: 4551
+        y: 2941
+        width: 703
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4235122c62100429a36e55802a7945
+      internalID: -905816171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_6
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 2957
+        width: 699
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a96081dc3a3344781f8a4833e039af
+      internalID: 1019824601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_7
+      rect:
+        serializedVersion: 2
+        x: 6176
+        y: 2957
+        width: 699
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8950a948d9a61e140b89ab93d9e07add
+      internalID: 1113856384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_8
+      rect:
+        serializedVersion: 2
+        x: 7039
+        y: 2922
+        width: 703
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b0d5b10f5942f44bd90c2acf393f81
+      internalID: -464801771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_9
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1750
+        width: 699
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a7a8814ef980f46aaf6ac3bcb870e7
+      internalID: 869616526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_10
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 1785
+        width: 700
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57b38c25770b82458975313cd1a1345
+      internalID: 722641881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_11
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 1750
+        width: 699
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a87075acd59da84b97c8c5c4e5b33e7
+      internalID: 1009540665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_12
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 1785
+        width: 703
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5b7900d44d65549925823f3d8793c7
+      internalID: -1391995266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_13
+      rect:
+        serializedVersion: 2
+        x: 3727
+        y: 1750
+        width: 703
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d546dd279a0c0488bded4b357c7bfe
+      internalID: -961021051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_14
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 648
+        width: 703
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caebfce92b8b7e9489d519014d168dd9
+      internalID: 815629954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_15
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 648
+        width: 703
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b129fb473feb5e49b8d5821cdfa7405
+      internalID: 1638798765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_16
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 648
+        width: 703
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9119ddc0da6c1e749a5fb3c2059a5b1f
+      internalID: -869962051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_17
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 648
+        width: 703
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0fc32d17bd33b41a0bc40deefc6803
+      internalID: 1168737107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter-02_18
+      rect:
+        serializedVersion: 2
+        x: 3711
+        y: 648
+        width: 699
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2011104669b8d58488b0cf5373136e44
+      internalID: -1417019981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +518,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Karakter-02_0: -1730692395
+      Karakter-02_1: 1357095445
+      Karakter-02_10: 722641881
+      Karakter-02_11: 1009540665
+      Karakter-02_12: -1391995266
+      Karakter-02_13: -961021051
+      Karakter-02_14: 815629954
+      Karakter-02_15: 1638798765
+      Karakter-02_16: -869962051
+      Karakter-02_17: 1168737107
+      Karakter-02_18: -1417019981
+      Karakter-02_2: -1224704227
+      Karakter-02_3: -1551794949
+      Karakter-02_4: 242382152
+      Karakter-02_5: -905816171
+      Karakter-02_6: 1019824601
+      Karakter-02_7: 1113856384
+      Karakter-02_8: -464801771
+      Karakter-02_9: 869616526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

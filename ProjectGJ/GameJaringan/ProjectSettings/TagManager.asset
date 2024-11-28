@@ -44,6 +44,9 @@ TagManager:
   - name: Tile
     uniqueID: 2148599649
     locked: 0
+  - name: Envi
+    uniqueID: 3290192343
+    locked: 0
   - name: Characters
     uniqueID: 3656536267
     locked: 0

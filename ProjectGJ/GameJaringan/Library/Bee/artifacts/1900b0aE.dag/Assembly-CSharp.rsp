@@ -409,6 +409,7 @@
 "Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Script/GameManager.cs"
+"Assets/Script/GameSystems.cs"
 "Assets/Script/script.cs"
 -langversion:9.0
 /deterministic

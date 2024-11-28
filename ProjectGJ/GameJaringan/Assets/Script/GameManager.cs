@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private Rigidbody2D rb;
     private Vector2 movement;
     private bool isRunning;
+    private bool isFacingRight = true; // Menyimpan arah pandangan karakter
 
     void Start()
     {
@@ -37,6 +38,16 @@ public class GameManager : MonoBehaviourPunCallbacks
         // Atur animasi berdasarkan gerakan
         float animationSpeed = movement.magnitude * (isRunning ? runSpeed : walkSpeed);
         animator.SetFloat("Speed", animationSpeed);
+
+        // Flip karakter jika bergerak ke kiri atau kanan
+        if (movement.x > 0 && !isFacingRight)
+        {
+            Flip();
+        }
+        else if (movement.x < 0 && isFacingRight)
+        {
+            Flip();
+        }
     }
 
     void FixedUpdate()
@@ -60,5 +71,15 @@ public class GameManager : MonoBehaviourPunCallbacks
             rb.angularVelocity = 0;
             rb.rotation = 0;
         }
+    }
+
+    private void Flip()
+    {
+        // Membalik arah pandangan karakter
+        isFacingRight = !isFacingRight;
+
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1; // Balik sumbu X
+        transform.localScale = localScale;
     }
 }
