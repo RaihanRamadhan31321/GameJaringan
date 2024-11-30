@@ -17,7 +17,7 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     [Header("Membuat Room Panel")]
     public GameObject BuatRoomPanel;
     public InputField NamaRoomInputField;
-    public InputField maxPlayerInputField;
+    public InputField MaxPlayersInputField; // Input Field untuk Max Players
 
     [Header("Daftar Room Panel")]
     public GameObject DaftarRoomPanel;
@@ -30,18 +30,27 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     public Text infoPlayerJoinText;
     public Button tombolMulaiPermainan;
     private string selectedRoomName;
+    private bool isSceneLoading = false;
+
+    [Header("Character Prefabs")]
+    public GameObject KarakterBajuMerahPrefab;
+    public GameObject KarakterBajuBiruPrefab;
+
+    private Dictionary<int, GameObject> spawnedCharacters = new Dictionary<int, GameObject>(); // Untuk menyimpan karakter yang di-spawn
+    private GameObject localPlayerCharacter; // Referensi karakter lokal
+
 
     private Dictionary<string, RoomInfo> cachedDaftarRoom;
     private Dictionary<string, GameObject> daftarRoomGameObjects;
 
     private void Start()
     {
+        PhotonNetwork.AutomaticallySyncScene = true; // Sinkronisasi scene otomatis
         ActivatePanel(PanelLogin.name);
         cachedDaftarRoom = new Dictionary<string, RoomInfo>();
         daftarRoomGameObjects = new Dictionary<string, GameObject>();
     }
 
-    // Tombol Login
     public void OnLoginButtonClicked()
     {
         string playerName = NamaPlayer.text;
@@ -59,11 +68,10 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         }
     }
 
-    //Tombol buat room
     public void OnRoomCreateButtonClicked()
     {
         string NamaRoom = NamaRoomInputField.text;
-        string maxPlayer = maxPlayerInputField.text;
+        string MaxPlayersText = MaxPlayersInputField.text;
 
         if (string.IsNullOrEmpty(NamaRoom))
         {
@@ -72,15 +80,26 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
             NamaRoomInputField.placeholder.GetComponent<Text>().text = "Nama Tidak Boleh Kosong!";
             NamaRoomInputField.placeholder.GetComponent<Text>().color = Color.red;
         }
-        else if (string.IsNullOrEmpty(maxPlayer))
+
+        if (string.IsNullOrEmpty(MaxPlayersText))
         {
-            Debug.Log("index wajib di isi");
-            maxPlayerInputField.placeholder.GetComponent<Text>().text = "index Tidak Boleh Kosong!";
-            maxPlayerInputField.placeholder.GetComponent<Text>().color = Color.red;
+            Debug.Log("Jumlah pemain maksimal wajib di isi!");
+            MaxPlayersInputField.placeholder.GetComponent<Text>().text = "Jumlah pemain maksimal kosong!";
+            MaxPlayersInputField.placeholder.GetComponent<Text>().color = Color.red;
+            return;
+        }
+
+        if (!int.TryParse(MaxPlayersText, out int maxPlayers) || maxPlayers < 2 || maxPlayers > 20)
+        {
+            Debug.Log("Jumlah pemain maksimal harus angka antara 2 dan 20!");
+            MaxPlayersInputField.text = "";
+            MaxPlayersInputField.placeholder.GetComponent<Text>().text = "Masukkan angka 2-20!";
+            MaxPlayersInputField.placeholder.GetComponent<Text>().color = Color.red;
+            return;
         }
 
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = (byte)int.Parse(maxPlayerInputField.text);
+        roomOptions.MaxPlayers = (byte)maxPlayers;
 
         PhotonNetwork.CreateRoom(NamaRoom, roomOptions);
     }
@@ -157,7 +176,6 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
             infoPlayerJoinText.text = "Players:  /";
         }
 
-        // Aktifkan tombol Mulai jika pemain adalah Master Client
         tombolMulaiPermainan.gameObject.SetActive(PhotonNetwork.IsMasterClient);
         tombolMulaiPermainan.onClick.RemoveAllListeners();
         tombolMulaiPermainan.onClick.AddListener(OnStartGameButtonClicked);
@@ -175,17 +193,21 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
 
     public void OnStartGameButtonClicked()
     {
-        PhotonNetwork.LoadLevel("GamePlay");
+        if (PhotonNetwork.IsMasterClient && !isSceneLoading)
+        {
+            isSceneLoading = true;
+            Debug.Log("Master Client memulai permainan. Memuat scene GamePlay...");
+            PhotonNetwork.LoadLevel("GamePlay");
+        }
+        else
+        {
+            Debug.LogWarning("Hanya Master Client yang dapat memulai permainan!");
+        }
     }
-
     public override void OnCreatedRoom()
     {
         Debug.Log(PhotonNetwork.CurrentRoom.Name + " berhasil dibuat.");
-
-        // Pindah ke panel daftar room
         ActivatePanel(DaftarRoomPanel.name);
-
-        // Langsung tampilkan panel join room untuk room yang baru dibuat
         OnShowJoinRoomPanel(PhotonNetwork.CurrentRoom.Name);
     }
 
@@ -193,6 +215,95 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     {
         Debug.Log("Bergabung dengan room: " + PhotonNetwork.CurrentRoom.Name);
         ActivatePanel(JoinRoomPanel.name);
+        UpdatePlayerInfo();
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("Master Client: Menunggu pemain lain.");
+        }
+
+        // Spawn karakter ketika memasuki gameplay
+        SpawnCharacter();
+    }
+
+    private void SpawnCharacter()
+    {
+        GameObject karakterPrefab;
+
+        // Pemain pertama mendapatkan karakter baju merah, pemain kedua baju biru
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+        {
+            karakterPrefab = KarakterBajuMerahPrefab;
+        }
+        else if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        {
+            karakterPrefab = KarakterBajuBiruPrefab;
+        }
+        else
+        {
+            Debug.LogWarning("Karakter hanya didukung untuk dua pemain.");
+            return;
+        }
+
+        // Spawn karakter
+        Vector3 spawnPosition = new Vector3(Random.Range(-5, 5), 0, 0); // Posisi spawn acak
+        localPlayerCharacter = PhotonNetwork.Instantiate(karakterPrefab.name, spawnPosition, Quaternion.identity);
+
+        // Aktifkan karakter lokal
+        localPlayerCharacter.SetActive(true);
+        Debug.Log($"Karakter {karakterPrefab.name} diaktifkan untuk pemain {PhotonNetwork.LocalPlayer.ActorNumber}.");
+
+        // Pastikan karakter pemain lain tidak aktif
+        foreach (var entry in spawnedCharacters)
+        {
+            if (entry.Key != PhotonNetwork.LocalPlayer.ActorNumber)
+            {
+                entry.Value.SetActive(false);
+            }
+        }
+
+        spawnedCharacters[PhotonNetwork.LocalPlayer.ActorNumber] = localPlayerCharacter;
+    }
+
+    private void UpdateRoomPrefabsUI(List<string> prefabList)
+    {
+        // Misalnya: Update UI daftar prefabs
+        foreach (string prefabName in prefabList)
+        {
+            Debug.Log($"Prefab: {prefabName} tersedia di room.");
+            // Tambahkan prefab ke tampilan UI Anda
+        }
+    }
+
+    [PunRPC]
+    private void SyncCharacterActivation()
+    {
+        foreach (var entry in spawnedCharacters)
+        {
+            if (entry.Value != null)
+            {
+                entry.Value.SetActive(entry.Key == PhotonNetwork.LocalPlayer.ActorNumber);
+            }
+        }
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        Debug.Log(otherPlayer.NickName + " telah keluar dari room.");
+        UpdatePlayerInfo(); // Memperbarui informasi pemain saat ada pemain keluar
+    }
+
+    private void UpdatePlayerInfo()
+    {
+        // Menampilkan jumlah pemain dan batas maksimal
+        if (PhotonNetwork.CurrentRoom != null)
+        {
+            infoPlayerJoinText.text = "Players: " + PhotonNetwork.CurrentRoom.PlayerCount + " / " + PhotonNetwork.CurrentRoom.MaxPlayers;
+        }
+        else
+        {
+            infoPlayerJoinText.text = "Players: 0 / 0";
+        }
     }
 
     public void OnShowRoomListButtonClicked()

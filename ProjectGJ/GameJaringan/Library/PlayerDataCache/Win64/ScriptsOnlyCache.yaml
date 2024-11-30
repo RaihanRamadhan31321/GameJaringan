@@ -1,10 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
-    - PlayerController
+    - GameManager
     Assembly-CSharp.dll:
+    - ExitGame
+    - GameManager
     - ManajerJaringan
-    - PlayerController
+    Cinemachine.dll:
+    - Cinemachine.CinemachineBrain
+    - Cinemachine.CinemachineFramingTransposer
+    - Cinemachine.CinemachinePipeline
+    - Cinemachine.CinemachineVirtualCamera
     PhotonUnityNetworking:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -21,6 +27,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Demos.dll:
+    - Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
@@ -34,18 +42,30 @@ ScriptsOnlyBuild:
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
+    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
+    Unity.2D.Tilemap.Extras.Editor.dll:
+    - UnityEditor.Tilemaps.GameObjectBrush
+    - UnityEditor.Tilemaps.GroupBrush
+    - UnityEditor.Tilemaps.LineBrush
+    - UnityEditor.Tilemaps.RandomBrush
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -70,6 +90,12 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
+    Cinemachine:
+    - Cinemachine.CinemachineBlendDefinition
+    - Cinemachine.CinemachineBrain/BrainEvent
+    - Cinemachine.CinemachineBrain/VcamActivatedEvent
+    - Cinemachine.CinemachineVirtualCameraBase/TransitionParams
+    - Cinemachine.LensSettings
     PhotonRealtime:
     - Photon.Realtime.AppSettings
     PhotonUnityNetworking:
@@ -98,8 +124,8 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnStartGameButtonClicked
-  - assembly: PhotonUnityNetworking
-    fullTypeName: Photon.Pun.MonoBehaviourPunCallbacks
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
     methodName: OnConnected
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
@@ -107,8 +133,8 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnStartGameButtonClicked
-  - assembly: PhotonUnityNetworking
-    fullTypeName: Photon.Pun.MonoBehaviourPunCallbacks
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
     methodName: OnConnected
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
@@ -119,8 +145,8 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnRoomCreateButtonClicked
-  - assembly: PhotonUnityNetworking
-    fullTypeName: Photon.Pun.MonoBehaviourPunCallbacks
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
     methodName: OnConnected
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
@@ -129,14 +155,17 @@ ScriptsOnlyBuild:
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
   - assembly: Assembly-CSharp
+    fullTypeName: ExitGame
+    methodName: OnExitButtonClicked
+  - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnStartGameButtonClicked
-  - assembly: PhotonUnityNetworking
-    fullTypeName: Photon.Pun.MonoBehaviourPunCallbacks
-    methodName: OnConnected
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnJoinedRoom
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnConnectedToMaster
@@ -162,6 +191,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 74
@@ -175,12 +206,34 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 16672}
+    - Class: 114
+      Script: {instanceID: 16674}
+    - Class: 114
+      Script: {instanceID: 16748}
+    - Class: 114
+      Script: {instanceID: 18070}
+    - Class: 114
+      Script: {instanceID: 18150}
+    - Class: 114
+      Script: {instanceID: 18242}
+    - Class: 114
+      Script: {instanceID: 18428}
+    - Class: 114
       Script: {instanceID: 18702}
     - Class: 114
-      Script: {instanceID: 20308}
+      Script: {instanceID: 19366}
     - Class: 114
-      Script: {instanceID: 24932}
+      Script: {instanceID: 20036}
+    - Class: 114
+      Script: {instanceID: 22280}
+    - Class: 114
+      Script: {instanceID: 22328}
+    - Class: 114
+      Script: {instanceID: 22992}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -189,6 +242,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/LoginLobby.unity:
     - Class: 1
@@ -238,6 +297,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16790}
     - Class: 114
+      Script: {instanceID: 16886}
+    - Class: 114
       Script: {instanceID: 17006}
     - Class: 114
       Script: {instanceID: 18150}
@@ -256,7 +317,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20008}
     - Class: 114
-      Script: {instanceID: 20308}
+      Script: {instanceID: 20036}
     - Class: 114
       Script: {instanceID: 21466}
     - Class: 114
@@ -276,19 +337,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 23002}
     - Class: 114
-      Script: {instanceID: 23560}
+      Script: {instanceID: 23562}
     - Class: 114
-      Script: {instanceID: 23762}
+      Script: {instanceID: 23764}
     - Class: 114
-      Script: {instanceID: 24438}
+      Script: {instanceID: 24440}
     - Class: 114
-      Script: {instanceID: 24442}
+      Script: {instanceID: 24444}
     - Class: 114
-      Script: {instanceID: 24932}
+      Script: {instanceID: 24934}
     - Class: 114
-      Script: {instanceID: 25104}
+      Script: {instanceID: 25106}
     - Class: 114
-      Script: {instanceID: 25526}
+      Script: {instanceID: 25528}
+    - Class: 114
+      Script: {instanceID: 28222}
+    - Class: 114
+      Script: {instanceID: 37612}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1146,6 +1211,12 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
+      Hash: 231be9bdecdd9235afa738b8f198e1a5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1240,12 +1311,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: DictionaryAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 65085a28c0543199c29c7302c58a58b7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerController
   - hash:
       serializedVersion: 2
       Hash: a013bd07781ea71be78aca4d84398e85
@@ -1566,7 +1631,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 448df5b7a487c6de6cb66a12bbe2f509
+      Hash: 0b049fbcee0e0b9c302ccd50c7df0533
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ManajerJaringan
@@ -2494,8 +2559,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 2247b26d82e3d8936772d417c36fdc89
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ExitGame
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginLobby.unity
   - Assets/Scenes/GamePlay.unity
-  playerPath: C:/GitHub/GameJaringan.exe
+  playerPath: C:/GitHub/Debug Game Jaringan/GameJaringan.exe

@@ -347,7 +347,9 @@
 "Assets/Photon/PhotonChat/Demos/DemoChat/IgnoreUiRaycastWhenInactive.cs"
 "Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
-"Assets/Script/PlayerController.cs"
+"Assets/Script/ExitGame.cs"
+"Assets/Script/GameManager.cs"
+"Assets/Script/GameSystems.cs"
 "Assets/Script/script.cs"
 -langversion:9.0
 /deterministic
