@@ -1,9 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
+    - GameCountdown
     - GameManager
     Assembly-CSharp.dll:
     - ExitGame
+    - GameCountdown
     - GameManager
     - ManajerJaringan
     Cinemachine.dll:
@@ -29,6 +31,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
@@ -62,10 +66,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -150,7 +152,10 @@ ScriptsOnlyBuild:
     methodName: OnConnected
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnConnectedToMaster
+    methodName: OnJoinRoomButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnShowRoomListButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -169,6 +174,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnConnectedToMaster
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnJoinedRoom
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -220,17 +228,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18428}
     - Class: 114
+      Script: {instanceID: 18488}
+    - Class: 114
       Script: {instanceID: 18702}
     - Class: 114
       Script: {instanceID: 19366}
     - Class: 114
       Script: {instanceID: 20036}
     - Class: 114
-      Script: {instanceID: 22280}
+      Script: {instanceID: 22282}
     - Class: 114
-      Script: {instanceID: 22328}
+      Script: {instanceID: 22330}
     - Class: 114
-      Script: {instanceID: 22992}
+      Script: {instanceID: 22994}
+    - Class: 114
+      Script: {instanceID: 23322}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -319,41 +331,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20036}
     - Class: 114
-      Script: {instanceID: 21466}
+      Script: {instanceID: 20570}
     - Class: 114
-      Script: {instanceID: 21492}
+      Script: {instanceID: 21468}
     - Class: 114
-      Script: {instanceID: 21640}
+      Script: {instanceID: 21494}
     - Class: 114
-      Script: {instanceID: 22012}
+      Script: {instanceID: 21642}
     - Class: 114
-      Script: {instanceID: 22076}
+      Script: {instanceID: 22014}
     - Class: 114
-      Script: {instanceID: 22328}
+      Script: {instanceID: 22078}
     - Class: 114
-      Script: {instanceID: 22992}
+      Script: {instanceID: 22330}
     - Class: 114
-      Script: {instanceID: 23000}
+      Script: {instanceID: 22994}
     - Class: 114
       Script: {instanceID: 23002}
     - Class: 114
-      Script: {instanceID: 23562}
+      Script: {instanceID: 23004}
     - Class: 114
-      Script: {instanceID: 23764}
+      Script: {instanceID: 23322}
     - Class: 114
-      Script: {instanceID: 24440}
+      Script: {instanceID: 23564}
     - Class: 114
-      Script: {instanceID: 24444}
+      Script: {instanceID: 23766}
     - Class: 114
-      Script: {instanceID: 24934}
+      Script: {instanceID: 24442}
     - Class: 114
-      Script: {instanceID: 25106}
+      Script: {instanceID: 24446}
     - Class: 114
-      Script: {instanceID: 25528}
+      Script: {instanceID: 24936}
     - Class: 114
-      Script: {instanceID: 28222}
+      Script: {instanceID: 25108}
     - Class: 114
-      Script: {instanceID: 37612}
+      Script: {instanceID: 25530}
+    - Class: 114
+      Script: {instanceID: 26454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1355,6 +1369,12 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 2247b26d82e3d8936772d417c36fdc89
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ExitGame
+  - hash:
+      serializedVersion: 2
       Hash: af770ad771658627851c64eafbf797f0
     assemblyName: Unity.2D.Tilemap.Extras
     namespaceName: UnityEngine.Tilemaps
@@ -1631,7 +1651,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 0b049fbcee0e0b9c302ccd50c7df0533
+      Hash: 9e202056b482e93f6d7ee7a13795a629
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ManajerJaringan
@@ -1953,6 +1973,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
     className: PingProperty
+  - hash:
+      serializedVersion: 2
+      Hash: d7360be06bbc0051fb8a8a63319f32e0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameCountdown
   - hash:
       serializedVersion: 2
       Hash: e8c59d6e8f5e169dae74af3365e221c3
@@ -2559,12 +2585,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 2247b26d82e3d8936772d417c36fdc89
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ExitGame
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginLobby.unity

@@ -36,14 +36,6 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     private string selectedRoomName;
     private bool isSceneLoading = false;
 
-    [Header("Character Prefabs")]
-    public GameObject KarakterBajuMerahPrefab;
-    public GameObject KarakterBajuBiruPrefab;
-
-    private Dictionary<int, GameObject> spawnedCharacters = new Dictionary<int, GameObject>(); // Untuk menyimpan karakter yang di-spawn
-    private GameObject localPlayerCharacter; // Referensi karakter lokal
-
-
     private Dictionary<string, RoomInfo> cachedDaftarRoom;
     private Dictionary<string, GameObject> daftarRoomGameObjects;
 
@@ -78,7 +70,6 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
             PhotonNetwork.ConnectUsingSettings();
         }
     }
-
 
     public void OnRoomCreateButtonClicked()
     {
@@ -233,82 +224,6 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         {
             Debug.Log("Master Client: Menunggu pemain lain.");
         }
-
-        // Tampilkan nama pemain di UI gameplay
-        if (namaPemainGameText != null)
-        {
-            namaPemainGameText.text = "Pemain: " + PhotonNetwork.LocalPlayer.NickName;
-        }
-
-        // Spawn karakter ketika memasuki gameplay
-        SpawnCharacter();
-    }
-
-    private void SpawnCharacter()
-    {
-        GameObject karakterPrefab;
-
-        // Pemain pertama mendapatkan karakter baju merah, pemain kedua baju biru
-        if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
-        {
-            karakterPrefab = KarakterBajuMerahPrefab;
-        }
-        else if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
-        {
-            karakterPrefab = KarakterBajuBiruPrefab;
-        }
-        else
-        {
-            Debug.LogWarning("Karakter hanya didukung untuk dua pemain.");
-            return;
-        }
-
-        // Spawn karakter
-        Vector3 spawnPosition = new Vector3(Random.Range(-5, 5), 0, 0); // Posisi spawn acak
-        localPlayerCharacter = PhotonNetwork.Instantiate(karakterPrefab.name, spawnPosition, Quaternion.identity);
-
-        // Aktifkan karakter lokal
-        localPlayerCharacter.SetActive(true);
-        Debug.Log($"Karakter {karakterPrefab.name} diaktifkan untuk pemain {PhotonNetwork.LocalPlayer.ActorNumber}.");
-
-        // Pastikan karakter pemain lain tidak aktif
-        foreach (var entry in spawnedCharacters)
-        {
-            if (entry.Key != PhotonNetwork.LocalPlayer.ActorNumber)
-            {
-                entry.Value.SetActive(false);
-            }
-        }
-
-        spawnedCharacters[PhotonNetwork.LocalPlayer.ActorNumber] = localPlayerCharacter;
-    }
-
-    private void UpdateRoomPrefabsUI(List<string> prefabList)
-    {
-        // Misalnya: Update UI daftar prefabs
-        foreach (string prefabName in prefabList)
-        {
-            Debug.Log($"Prefab: {prefabName} tersedia di room.");
-            // Tambahkan prefab ke tampilan UI Anda
-        }
-    }
-
-    [PunRPC]
-    private void SyncCharacterActivation()
-    {
-        foreach (var entry in spawnedCharacters)
-        {
-            if (entry.Value != null)
-            {
-                entry.Value.SetActive(entry.Key == PhotonNetwork.LocalPlayer.ActorNumber);
-            }
-        }
-    }
-
-    public override void OnPlayerLeftRoom(Player otherPlayer)
-    {
-        Debug.Log(otherPlayer.NickName + " telah keluar dari room.");
-        UpdatePlayerInfo(); // Memperbarui informasi pemain saat ada pemain keluar
     }
 
     private void UpdatePlayerInfo()

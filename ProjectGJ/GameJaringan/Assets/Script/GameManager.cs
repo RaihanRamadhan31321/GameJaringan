@@ -1,5 +1,6 @@
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
@@ -13,6 +14,13 @@ public class GameManager : MonoBehaviourPunCallbacks
     private bool isRunning;
     private bool isFacingRight = true; // Menyimpan arah pandangan karakter
 
+    [Header("UI Settings")]
+    public GameObject panelSetting; // Panel pengaturan
+    public Slider musicVolumeSlider; // Slider untuk volume musik
+    public AudioSource backgroundMusic; // Sumber audio untuk musik latar
+
+    private bool isPanelSettingActive = false;
+
     void Start()
     {
         if (!photonView.IsMine)
@@ -23,44 +31,74 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
 
         rb = GetComponent<Rigidbody2D>();
+
+        // Set volume awal dari audio source
+        if (backgroundMusic != null)
+        {
+            musicVolumeSlider.value = backgroundMusic.volume;
+            musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
+        }
+
+        // Pastikan panel setting tidak aktif di awal
+        panelSetting.SetActive(false);
     }
 
     void Update()
     {
-        // Input untuk gerakan karakter
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        movement = movement.normalized;
-
-        // Cek jika lari
-        isRunning = Input.GetKey(KeyCode.LeftShift);
-
-        // Atur animasi berdasarkan gerakan
-        float animationSpeed = movement.magnitude * (isRunning ? runSpeed : walkSpeed);
-        animator.SetFloat("Speed", animationSpeed);
-
-        // Flip karakter jika bergerak ke kiri atau kanan
-        if (movement.x > 0 && !isFacingRight)
+        if (!isPanelSettingActive)
         {
-            Flip();
+            // Input untuk gerakan karakter
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+            movement = movement.normalized;
+
+            // Cek jika lari
+            isRunning = Input.GetKey(KeyCode.LeftShift);
+
+            // Atur animasi berdasarkan gerakan
+            float animationSpeed = movement.magnitude * (isRunning ? runSpeed : walkSpeed);
+            animator.SetFloat("Speed", animationSpeed);
+
+            // Flip karakter jika bergerak ke kiri atau kanan
+            if (movement.x > 0 && !isFacingRight)
+            {
+                Flip();
+            }
+            else if (movement.x < 0 && isFacingRight)
+            {
+                Flip();
+            }
         }
-        else if (movement.x < 0 && isFacingRight)
+
+        // Tampilkan atau sembunyikan panel setting saat tombol Esc ditekan
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Flip();
+            ToggleSettingPanel();
         }
     }
 
     void FixedUpdate()
     {
-        float currentSpeed = isRunning ? runSpeed : walkSpeed;
-
-        if (rb != null)
+        if (!isPanelSettingActive)
         {
-            rb.velocity = movement * currentSpeed;
+            float currentSpeed = isRunning ? runSpeed : walkSpeed;
+
+            if (rb != null)
+            {
+                rb.velocity = movement * currentSpeed;
+            }
+            else
+            {
+                Debug.LogError("Rigidbody2D tidak ditemukan!");
+            }
         }
         else
         {
-            Debug.LogError("Rigidbody2D tidak ditemukan!");
+            // Hentikan gerakan jika panel setting aktif
+            if (rb != null)
+            {
+                rb.velocity = Vector2.zero;
+            }
         }
     }
 
@@ -81,5 +119,22 @@ public class GameManager : MonoBehaviourPunCallbacks
         Vector3 localScale = transform.localScale;
         localScale.x *= -1; // Balik sumbu X
         transform.localScale = localScale;
+    }
+
+    private void ToggleSettingPanel()
+    {
+        isPanelSettingActive = !isPanelSettingActive;
+        panelSetting.SetActive(isPanelSettingActive);
+
+        // Hentikan waktu jika panel setting aktif
+        Time.timeScale = isPanelSettingActive ? 0 : 1;
+    }
+
+    private void SetMusicVolume(float volume)
+    {
+        if (backgroundMusic != null)
+        {
+            backgroundMusic.volume = volume;
+        }
     }
 }

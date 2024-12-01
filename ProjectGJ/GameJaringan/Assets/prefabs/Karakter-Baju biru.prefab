@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2209432627103957084}
   - component: {fileID: 2773620921564022281}
   - component: {fileID: 3846641196657491791}
+  - component: {fileID: 5724843905475882121}
   m_Layer: 0
   m_Name: Karakter-Baju biru
   m_TagString: Untagged
@@ -170,7 +171,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -181,7 +182,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2773620921564022281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,3 +220,20 @@ MonoBehaviour:
   walkSpeed: 5
   runSpeed: 10
   animator: {fileID: 96080162889538504}
+--- !u!114 &5724843905475882121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227708333517529915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa20279f4ff1f64098a430b2410333b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownText: {fileID: 0}
+  losePanel: {fileID: 0}
+  winnerPanel: {fileID: 0}
+  statusU: {fileID: 0}
+  timerInputField: {fileID: 0}
