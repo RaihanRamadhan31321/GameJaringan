@@ -11,6 +11,10 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     public InputField NamaPlayer;
     public GameObject PanelLogin;
 
+    [Header("UI Nama Pemain")]
+    public Text namaPemainText; // Untuk menampilkan nama pemain di Main Menu
+    public Text namaPemainGameText; // Untuk menampilkan nama pemain di Gameplay
+
     [Header("Room Panel")]
     public GameObject RoomPanel;
 
@@ -64,9 +68,17 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         else
         {
             PhotonNetwork.LocalPlayer.NickName = playerName;
+
+            // Tampilkan nama di UI
+            if (namaPemainText != null)
+            {
+                namaPemainText.text = "" + playerName + "";
+            }
+
             PhotonNetwork.ConnectUsingSettings();
         }
     }
+
 
     public void OnRoomCreateButtonClicked()
     {
@@ -220,6 +232,12 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             Debug.Log("Master Client: Menunggu pemain lain.");
+        }
+
+        // Tampilkan nama pemain di UI gameplay
+        if (namaPemainGameText != null)
+        {
+            namaPemainGameText.text = "Pemain: " + PhotonNetwork.LocalPlayer.NickName;
         }
 
         // Spawn karakter ketika memasuki gameplay
