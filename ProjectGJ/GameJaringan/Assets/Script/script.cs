@@ -209,6 +209,8 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         }
 
         PhotonNetwork.JoinRoom(roomName);
+        PhotonNetwork.LoadLevel("GamePlay");
+
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)

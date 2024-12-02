@@ -102,8 +102,8 @@
     <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\IMGUI\IDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\EditorTool\ScriptableData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\IMGUI\GUIFramework\CommandAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\EditorTool\PathComponentEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\IMGUI\GUIFramework\CommandAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\IMGUI\GUIFramework\GenericDefaultControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\EditablePath\IUndoObject.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.common@8.0.2\Path\Editor\Shapes\Polygon.cs" />
