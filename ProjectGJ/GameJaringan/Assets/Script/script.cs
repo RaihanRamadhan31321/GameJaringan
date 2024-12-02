@@ -28,6 +28,10 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     public GameObject daftarEntriRoomPrefab;
     public GameObject daftarRoomUtamaGameobject;
 
+    [Header("Join Room dengan Nama")]
+    public InputField InputNamaRoomJoin; // Input untuk memasukkan nama room
+    public Button tombolGabungDenganNama; // Tombol untuk bergabung berdasarkan nama
+
     [Header("Panel Join Room")]
     public GameObject JoinRoomPanel;
     public Text namaRoomJoinText;
@@ -45,6 +49,12 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         ActivatePanel(PanelLogin.name);
         cachedDaftarRoom = new Dictionary<string, RoomInfo>();
         daftarRoomGameObjects = new Dictionary<string, GameObject>();
+
+        // Tambahkan listener untuk tombol join dengan nama room
+        if (tombolGabungDenganNama != null)
+        {
+            tombolGabungDenganNama.onClick.AddListener(OnJoinRoomByNameClicked);
+        }
     }
 
     public void OnLoginButtonClicked()
@@ -184,6 +194,29 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         tombolMulaiPermainan.onClick.AddListener(OnStartGameButtonClicked);
 
         ActivatePanel(JoinRoomPanel.name);
+    }
+
+    public void OnJoinRoomByNameClicked()
+    {
+        string roomName = InputNamaRoomJoin.text;
+
+        if (string.IsNullOrEmpty(roomName))
+        {
+            Debug.LogWarning("Nama Room tidak boleh kosong!");
+            InputNamaRoomJoin.placeholder.GetComponent<Text>().text = "Nama Room Kosong!";
+            InputNamaRoomJoin.placeholder.GetComponent<Text>().color = Color.red;
+            return;
+        }
+
+        PhotonNetwork.JoinRoom(roomName);
+    }
+
+    public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        Debug.LogError("Gagal bergabung dengan Room: " + message);
+        InputNamaRoomJoin.text = "";
+        InputNamaRoomJoin.placeholder.GetComponent<Text>().text = "Room Tidak Ada!";
+        InputNamaRoomJoin.placeholder.GetComponent<Text>().color = Color.red;
     }
 
     public void OnJoinRoomButtonClicked()

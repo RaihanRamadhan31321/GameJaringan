@@ -327,7 +327,6 @@
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Collections.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Mathematics.ref.dll"
--r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Core.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Flow.ref.dll"

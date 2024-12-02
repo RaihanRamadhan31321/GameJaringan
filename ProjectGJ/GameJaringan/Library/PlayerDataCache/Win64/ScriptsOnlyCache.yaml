@@ -31,10 +31,7 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
-    - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
     Unity.2D.Animation.Editor.dll:
@@ -66,8 +63,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -89,6 +88,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
@@ -149,15 +149,6 @@ ScriptsOnlyBuild:
     methodName: OnRoomCreateButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnConnected
-  - assembly: Assembly-CSharp
-    fullTypeName: ManajerJaringan
-    methodName: OnJoinRoomButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: ManajerJaringan
-    methodName: OnShowRoomListButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: ManajerJaringan
     methodName: ActivatePanel
   - assembly: Assembly-CSharp
     fullTypeName: ExitGame
@@ -176,13 +167,22 @@ ScriptsOnlyBuild:
     methodName: OnConnectedToMaster
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnJoinedRoom
+    methodName: OnStartGameButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnJoinRoomByNameClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnConnectedToMaster
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
+  - assembly: Assembly-CSharp
+    fullTypeName: ExitGame
+    methodName: OnExitButtonClicked
   sceneClasses:
     Assets/Scenes/GamePlay.unity:
     - Class: 1
@@ -235,6 +235,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 19366}
     - Class: 114
       Script: {instanceID: 20036}
+    - Class: 114
+      Script: {instanceID: 20570}
+    - Class: 114
+      Script: {instanceID: 21468}
     - Class: 114
       Script: {instanceID: 22282}
     - Class: 114
@@ -366,8 +370,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 25108}
     - Class: 114
       Script: {instanceID: 25530}
-    - Class: 114
-      Script: {instanceID: 26454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -607,12 +609,6 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerEnterMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 0c6de72eaf8c1070da824268c4bfad9d
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
       Hash: ad49e20f31ed572e586aa8bbaafb591b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -739,12 +735,6 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: 52db48e3be0a2b4f8b06f918fd1ebfbc
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_Dropdown
-  - hash:
-      serializedVersion: 2
       Hash: f295412bc00b58b9095a71e9764cc886
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -835,22 +825,10 @@ ScriptsOnlyBuild:
     className: LoaderAnime
   - hash:
       serializedVersion: 2
-      Hash: 3b5263a98bcc71d9a9d1d78a31b34ced
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_SelectionCaret
-  - hash:
-      serializedVersion: 2
       Hash: 28fd3d045acc780719a17f02073eb448
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: InputField
-  - hash:
-      serializedVersion: 2
-      Hash: 8e6dc3d79712ca4934f6d50c80f010b1
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
       Hash: 80aeb876b0e95f6256bbfcbf33e26e84
@@ -1081,12 +1059,6 @@ ScriptsOnlyBuild:
     className: EventSystemSpawner
   - hash:
       serializedVersion: 2
-      Hash: 960935b102b3064f4b924de16426e340
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TextMeshPro
-  - hash:
-      serializedVersion: 2
       Hash: b2d2a01a2a85d9ed12e80cb33a9a6044
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1225,7 +1197,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: 231be9bdecdd9235afa738b8f198e1a5
+      Hash: ecb9b56ffbf847d264e073c0a7b2e386
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -1235,12 +1207,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionStay2DMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 185e7bacfbbc5defefa609c70f7ff4ce
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
       Hash: 682dfc653b22feea53b38adb3bc66414
@@ -1297,12 +1263,6 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: c933b590b3badb5918fa01e73cd5cc0c
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_Settings
-  - hash:
-      serializedVersion: 2
       Hash: abe45bd8b738517a7858b31677f78653
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1345,22 +1305,10 @@ ScriptsOnlyBuild:
     className: CinemachineTargetGroup
   - hash:
       serializedVersion: 2
-      Hash: e7e95903ca66d58e1a7cbd71f824e16d
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_SubMeshUI
-  - hash:
-      serializedVersion: 2
       Hash: ae6480b0c4dc2071d2580b8c7312a44b
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CrcCheckToggle
-  - hash:
-      serializedVersion: 2
-      Hash: 9078325c2a6f6a2d9612ade897511860
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
       Hash: 96e7bcfd2d072992dab64ac44058b930
@@ -1555,12 +1503,6 @@ ScriptsOnlyBuild:
     className: CinemachineVolumeSettings
   - hash:
       serializedVersion: 2
-      Hash: 47ee34eb8b6021efa0289dbbb17a5a85
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_InputField
-  - hash:
-      serializedVersion: 2
       Hash: 177ac57e7b3c2c2bd620d9e3208e5d26
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1645,13 +1587,7 @@ ScriptsOnlyBuild:
     className: FriendListView
   - hash:
       serializedVersion: 2
-      Hash: 17f82e3e7d8f8b07a270a4aad9bfe79d
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_FontAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 9e202056b482e93f6d7ee7a13795a629
+      Hash: b525a985495590df007c824f8d99937f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ManajerJaringan
@@ -1843,12 +1779,6 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 9637dcdf3068a91dfe653e61bb82f13d
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TextMeshProUGUI
-  - hash:
-      serializedVersion: 2
       Hash: 90522e88720d989c1a8bb1ce662f472c
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1903,12 +1833,6 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: 13f262cc0741566a7ab72682984bc3e1
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_SubMesh
-  - hash:
-      serializedVersion: 2
       Hash: febcfbf0a0d85e37808a3740e3c2c6fa
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1961,12 +1885,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
     className: IsConnectedAndReadyProperty
-  - hash:
-      serializedVersion: 2
-      Hash: 8bbce9932f67ad8e7f4eefec87800f94
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TextContainer
   - hash:
       serializedVersion: 2
       Hash: 7ba86577a1f3d5b35e9eb696237bfa1e
@@ -2435,12 +2353,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 1553f209ae0b2d5d3a35685fca55f9c3
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
       Hash: 29362692ab8b7c46bfb7c8cb42bfe5b4
