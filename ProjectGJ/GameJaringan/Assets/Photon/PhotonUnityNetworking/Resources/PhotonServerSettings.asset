@@ -43,6 +43,9 @@ MonoBehaviour:
   - SyncCharacterActivation
   - CheckGameOver
   - StartCountdown
+  - SyncGameStartTime
+  - SyncAnimation
+  - SyncFlip
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

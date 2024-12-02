@@ -31,7 +31,15 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
+    PhotonUnityNetworking.Utilities:
+    - Photon.Pun.UtilityScripts.SmoothSyncMovement
+    PhotonUnityNetworking.Utilities.dll:
+    - Photon.Pun.UtilityScripts.OnClickRpc
+    - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.dll:
+    - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
     Unity.2D.Animation.Editor.dll:
@@ -167,13 +175,13 @@ ScriptsOnlyBuild:
     methodName: OnConnectedToMaster
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnStartGameButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: ManajerJaringan
     methodName: OnJoinRoomByNameClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnConnectedToMaster
+    methodName: OnStartGameButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnJoinedRoom
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -218,35 +226,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16674}
     - Class: 114
-      Script: {instanceID: 16748}
+      Script: {instanceID: 16744}
     - Class: 114
-      Script: {instanceID: 18070}
+      Script: {instanceID: 18030}
     - Class: 114
-      Script: {instanceID: 18150}
+      Script: {instanceID: 18104}
     - Class: 114
-      Script: {instanceID: 18242}
+      Script: {instanceID: 18194}
     - Class: 114
-      Script: {instanceID: 18428}
+      Script: {instanceID: 18378}
     - Class: 114
-      Script: {instanceID: 18488}
+      Script: {instanceID: 18436}
     - Class: 114
-      Script: {instanceID: 18702}
+      Script: {instanceID: 18646}
     - Class: 114
-      Script: {instanceID: 19366}
+      Script: {instanceID: 19292}
     - Class: 114
-      Script: {instanceID: 20036}
+      Script: {instanceID: 19938}
     - Class: 114
-      Script: {instanceID: 20570}
+      Script: {instanceID: 20454}
     - Class: 114
-      Script: {instanceID: 21468}
+      Script: {instanceID: 21142}
     - Class: 114
-      Script: {instanceID: 22282}
+      Script: {instanceID: 21332}
     - Class: 114
-      Script: {instanceID: 22330}
+      Script: {instanceID: 22128}
     - Class: 114
-      Script: {instanceID: 22994}
+      Script: {instanceID: 22176}
     - Class: 114
-      Script: {instanceID: 23322}
+      Script: {instanceID: 22814}
+    - Class: 114
+      Script: {instanceID: 23124}
+    - Class: 114
+      Script: {instanceID: 24710}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -309,67 +321,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16674}
     - Class: 114
-      Script: {instanceID: 16748}
+      Script: {instanceID: 16744}
     - Class: 114
-      Script: {instanceID: 16790}
+      Script: {instanceID: 16786}
     - Class: 114
-      Script: {instanceID: 16886}
+      Script: {instanceID: 16878}
     - Class: 114
-      Script: {instanceID: 17006}
+      Script: {instanceID: 16996}
     - Class: 114
-      Script: {instanceID: 18150}
+      Script: {instanceID: 18104}
     - Class: 114
-      Script: {instanceID: 18428}
+      Script: {instanceID: 18378}
     - Class: 114
-      Script: {instanceID: 18488}
+      Script: {instanceID: 18436}
     - Class: 114
-      Script: {instanceID: 18702}
+      Script: {instanceID: 18646}
     - Class: 114
-      Script: {instanceID: 19800}
+      Script: {instanceID: 19716}
     - Class: 114
-      Script: {instanceID: 19804}
+      Script: {instanceID: 19720}
     - Class: 114
-      Script: {instanceID: 19864}
+      Script: {instanceID: 19780}
     - Class: 114
-      Script: {instanceID: 20008}
+      Script: {instanceID: 19910}
     - Class: 114
-      Script: {instanceID: 20036}
+      Script: {instanceID: 19938}
     - Class: 114
-      Script: {instanceID: 20570}
+      Script: {instanceID: 20454}
     - Class: 114
-      Script: {instanceID: 21468}
+      Script: {instanceID: 21082}
     - Class: 114
-      Script: {instanceID: 21494}
+      Script: {instanceID: 21142}
     - Class: 114
-      Script: {instanceID: 21642}
+      Script: {instanceID: 21332}
     - Class: 114
-      Script: {instanceID: 22014}
+      Script: {instanceID: 21358}
     - Class: 114
-      Script: {instanceID: 22078}
+      Script: {instanceID: 21496}
     - Class: 114
-      Script: {instanceID: 22330}
+      Script: {instanceID: 21866}
     - Class: 114
-      Script: {instanceID: 22994}
+      Script: {instanceID: 21928}
     - Class: 114
-      Script: {instanceID: 23002}
+      Script: {instanceID: 22176}
     - Class: 114
-      Script: {instanceID: 23004}
+      Script: {instanceID: 22814}
     - Class: 114
-      Script: {instanceID: 23322}
+      Script: {instanceID: 22822}
     - Class: 114
-      Script: {instanceID: 23564}
+      Script: {instanceID: 22824}
     - Class: 114
-      Script: {instanceID: 23766}
+      Script: {instanceID: 23124}
     - Class: 114
-      Script: {instanceID: 24442}
+      Script: {instanceID: 23366}
     - Class: 114
-      Script: {instanceID: 24446}
+      Script: {instanceID: 23566}
     - Class: 114
-      Script: {instanceID: 24936}
+      Script: {instanceID: 24232}
     - Class: 114
-      Script: {instanceID: 25108}
+      Script: {instanceID: 24236}
     - Class: 114
-      Script: {instanceID: 25530}
+      Script: {instanceID: 24710}
+    - Class: 114
+      Script: {instanceID: 24878}
+    - Class: 114
+      Script: {instanceID: 25290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1197,7 +1213,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: ecb9b56ffbf847d264e073c0a7b2e386
+      Hash: 104ea96deab8e88126e1f09beddde961
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager

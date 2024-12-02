@@ -1519,7 +1519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13135418, y: 0.35559258}
   m_AnchorMax: {x: 0.335375, y: 0.455}
-  m_AnchoredPosition: {x: -5.108551, y: -8}
+  m_AnchoredPosition: {x: -5.108673, y: -8}
   m_SizeDelta: {x: -152.6, y: -32.9702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709737148
@@ -2294,7 +2294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4247809, y: 0.5}
   m_AnchorMax: {x: 0.61241436, y: 0.6034349}
-  m_AnchoredPosition: {x: -0.18786621, y: 0.24273682}
+  m_AnchoredPosition: {x: -0.18774414, y: 0.24273682}
   m_SizeDelta: {x: -10.772202, y: -8.3088}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862131533
@@ -3074,7 +3074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5000038}
+  m_AnchoredPosition: {x: 0, y: -0.5}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233706150
@@ -4689,7 +4689,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5000038}
+  m_AnchoredPosition: {x: 0, y: -0.5}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657990791
@@ -5214,6 +5214,7 @@ GameObject:
   - component: {fileID: 1872964705}
   - component: {fileID: 1872964704}
   - component: {fileID: 1872964703}
+  - component: {fileID: 1872964706}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -5287,18 +5288,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 184634518}
         m_TargetAssemblyTypeName: ManajerJaringan, Assembly-CSharp
-        m_MethodName: OnStartGameButtonClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 184634518}
-        m_TargetAssemblyTypeName: ManajerJaringan, Assembly-CSharp
         m_MethodName: OnJoinRoomByNameClicked
         m_Mode: 1
         m_Arguments:
@@ -5311,7 +5300,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 184634518}
         m_TargetAssemblyTypeName: ManajerJaringan, Assembly-CSharp
-        m_MethodName: OnConnectedToMaster
+        m_MethodName: OnStartGameButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 184634518}
+        m_TargetAssemblyTypeName: ManajerJaringan, Assembly-CSharp
+        m_MethodName: OnJoinedRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5359,6 +5360,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872964701}
   m_CullTransparentMesh: 1
+--- !u!114 &1872964706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872964701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd0ed7420882554fa146aab6aeb2e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: 0
+  ModifierKey: 0
+  Target: 0
 --- !u!1001 &1922843880
 PrefabInstance:
   m_ObjectHideFlags: 0
