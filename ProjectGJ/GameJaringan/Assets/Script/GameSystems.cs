@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameCountdown : MonoBehaviourPunCallbacks
 {
@@ -14,12 +15,23 @@ public class GameCountdown : MonoBehaviourPunCallbacks
     private float countdownTime = 30f; // Default waktu mundur
     private bool gameEnded = false;
 
+    public Button loseButton; // Tombol untuk kalah
+    public Button winButton; // Tombol untuk menang
+
     void Start()
     {
+        // Pastikan tombol tidak aktif saat game dimulai
+        loseButton.gameObject.SetActive(false);
+        winButton.gameObject.SetActive(false);
+
         if (PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("StartCountdown", RpcTarget.AllBuffered, countdownTime);
         }
+
+        // Assign event listener pada tombol
+        loseButton.onClick.AddListener(() => LoadScene("LoseScene"));
+        winButton.onClick.AddListener(() => LoadScene("WinScene"));
     }
 
     public void SetCountdownTime()
@@ -69,6 +81,7 @@ public class GameCountdown : MonoBehaviourPunCallbacks
             if (photonView.IsMine)
             {
                 losePanel.SetActive(true);
+                loseButton.gameObject.SetActive(true); // Tampilkan tombol kalah
             }
         }
         else
@@ -77,6 +90,7 @@ public class GameCountdown : MonoBehaviourPunCallbacks
             if (photonView.IsMine)
             {
                 winnerPanel.SetActive(true);
+                winButton.gameObject.SetActive(true); // Tampilkan tombol menang
             }
         }
 
@@ -89,5 +103,10 @@ public class GameCountdown : MonoBehaviourPunCallbacks
         {
             photonView.RPC("StartCountdown", RpcTarget.AllBuffered, countdownTime);
         }
+    }
+
+    private void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene("LoginLobby");
     }
 }
