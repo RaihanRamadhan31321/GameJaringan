@@ -1,12 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
-    - GameCountdown
     - GameManager
+    - GameMechanics
     Assembly-CSharp.dll:
     - ExitGame
-    - GameCountdown
     - GameManager
+    - GameMechanics
     - ManajerJaringan
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -191,6 +191,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ExitGame
     methodName: OnExitButtonClicked
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.Object
+    methodName: set_name
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.Object
+    methodName: set_name
   sceneClasses:
     Assets/Scenes/GamePlay.unity:
     - Class: 1
@@ -1909,10 +1915,10 @@ ScriptsOnlyBuild:
     className: PingProperty
   - hash:
       serializedVersion: 2
-      Hash: d7360be06bbc0051fb8a8a63319f32e0
+      Hash: f5f092dbaa42278a7b6a4112de3d2d27
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: GameCountdown
+    className: GameMechanics
   - hash:
       serializedVersion: 2
       Hash: e8c59d6e8f5e169dae74af3365e221c3

@@ -33,16 +33,20 @@ public class GameManager : MonoBehaviourPunCallbacks
     private float elapsedTime;
 
     private PhotonView photonView;
+    private bool isPlayerTwoJoined = false; // Status apakah pemain kedua sudah masuk
 
     void Start()
     {
         photonView = GetComponent<PhotonView>();
 
+        // Pastikan kedua karakter aktif
+        redShirtCharacter.SetActive(true);
+        blueShirtCharacter.SetActive(true);
+
         // Pemain pertama mengontrol karakter baju merah, pemain kedua mengontrol baju biru
         if (PhotonNetwork.IsMasterClient)
         {
             playerCharacter = redShirtCharacter;
-            blueShirtCharacter.SetActive(false); // Matikan karakter biru jika pemain kedua belum online
         }
         else
         {
@@ -116,6 +120,12 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         if (!isPanelSettingActive && photonView.IsMine)
         {
+            if (playerCharacter == blueShirtCharacter && !isPlayerTwoJoined)
+            {
+                // Jika pemain kedua belum masuk, karakter biru tidak bisa bergerak
+                return;
+            }
+
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
             movement = movement.normalized;
@@ -152,6 +162,13 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         if (!isPanelSettingActive && rb != null && photonView.IsMine)
         {
+            if (playerCharacter == blueShirtCharacter && !isPlayerTwoJoined)
+            {
+                // Jika pemain kedua belum masuk, karakter biru tidak bisa bergerak
+                rb.velocity = Vector2.zero;
+                return;
+            }
+
             float currentSpeed = isRunning ? 10f : 5f;
             rb.velocity = movement * currentSpeed;
         }
@@ -170,7 +187,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         playerCharacter.transform.localScale = localScale;
 
         // Sinkronisasi flipping ke semua pemain
-        photonView.RPC("SyncFlip", RpcTarget.Others, isFacingRight);
+        photonView.RPC("SyncFlip", RpcTarget.All, isFacingRight);
     }
 
     private void ToggleSettingPanel()
@@ -218,10 +235,10 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         base.OnPlayerEnteredRoom(newPlayer);
 
-        // Aktifkan karakter biru jika pemain kedua masuk
-        if (!PhotonNetwork.IsMasterClient && playerCharacter == blueShirtCharacter)
+        // Aktifkan kontrol karakter biru jika pemain kedua masuk
+        if (PhotonNetwork.IsMasterClient)
         {
-            blueShirtCharacter.SetActive(true);
+            isPlayerTwoJoined = true;
         }
     }
 }

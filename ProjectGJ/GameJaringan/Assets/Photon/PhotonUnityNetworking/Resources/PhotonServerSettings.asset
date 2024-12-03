@@ -46,6 +46,7 @@ MonoBehaviour:
   - SyncGameStartTime
   - SyncAnimation
   - SyncFlip
+  - AssignStatusU
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
