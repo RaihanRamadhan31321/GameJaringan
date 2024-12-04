@@ -31,10 +31,11 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.Utilities.dll:
-    - Photon.Pun.UtilityScripts.OnClickRpc
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonTransformView
@@ -176,10 +177,10 @@ ScriptsOnlyBuild:
     methodName: OnJoinRoomByNameClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnStartGameButtonClicked
+    methodName: OnJoinedRoom
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnJoinedRoom
+    methodName: OnConnected
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -211,8 +212,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 74
@@ -226,27 +225,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16634}
+      Script: {instanceID: 16672}
     - Class: 114
       Script: {instanceID: 16674}
     - Class: 114
-      Script: {instanceID: 16676}
+      Script: {instanceID: 16744}
     - Class: 114
-      Script: {instanceID: 16746}
+      Script: {instanceID: 18030}
     - Class: 114
-      Script: {instanceID: 18032}
+      Script: {instanceID: 18104}
     - Class: 114
-      Script: {instanceID: 18106}
+      Script: {instanceID: 18194}
     - Class: 114
-      Script: {instanceID: 18196}
+      Script: {instanceID: 18378}
     - Class: 114
-      Script: {instanceID: 18380}
+      Script: {instanceID: 18436}
     - Class: 114
-      Script: {instanceID: 18438}
+      Script: {instanceID: 18646}
     - Class: 114
-      Script: {instanceID: 18648}
+      Script: {instanceID: 19292}
     - Class: 114
-      Script: {instanceID: 19294}
+      Script: {instanceID: 19938}
     - Class: 114
       Script: {instanceID: 20454}
     - Class: 114
@@ -321,39 +320,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16634}
+      Script: {instanceID: 16672}
     - Class: 114
       Script: {instanceID: 16674}
     - Class: 114
-      Script: {instanceID: 16676}
+      Script: {instanceID: 16744}
     - Class: 114
-      Script: {instanceID: 16746}
+      Script: {instanceID: 16786}
     - Class: 114
-      Script: {instanceID: 16788}
+      Script: {instanceID: 16878}
     - Class: 114
-      Script: {instanceID: 16880}
+      Script: {instanceID: 16996}
     - Class: 114
-      Script: {instanceID: 16998}
+      Script: {instanceID: 18104}
     - Class: 114
-      Script: {instanceID: 18106}
+      Script: {instanceID: 18378}
     - Class: 114
-      Script: {instanceID: 18380}
+      Script: {instanceID: 18436}
     - Class: 114
-      Script: {instanceID: 18438}
+      Script: {instanceID: 18646}
     - Class: 114
-      Script: {instanceID: 18648}
+      Script: {instanceID: 19716}
     - Class: 114
-      Script: {instanceID: 19718}
+      Script: {instanceID: 19720}
     - Class: 114
-      Script: {instanceID: 19722}
+      Script: {instanceID: 19780}
     - Class: 114
-      Script: {instanceID: 19782}
+      Script: {instanceID: 19910}
     - Class: 114
-      Script: {instanceID: 19912}
+      Script: {instanceID: 19938}
     - Class: 114
       Script: {instanceID: 20454}
-    - Class: 114
-      Script: {instanceID: 21082}
     - Class: 114
       Script: {instanceID: 21142}
     - Class: 114
@@ -423,12 +420,6 @@ ScriptsOnlyBuild:
     - Class: 225
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 104ea96deab8e88126e1f09beddde961
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: b5007673bbbdb9d12597a1d8201370f5
@@ -1221,6 +1212,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities
     namespaceName: Photon.Pun.UtilityScripts
     className: StatesGui
+  - hash:
+      serializedVersion: 2
+      Hash: 104ea96deab8e88126e1f09beddde961
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a
