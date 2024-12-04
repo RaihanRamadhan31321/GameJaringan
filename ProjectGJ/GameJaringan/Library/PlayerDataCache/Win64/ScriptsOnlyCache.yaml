@@ -31,8 +31,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.Utilities.dll:
@@ -228,27 +226,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16672}
+      Script: {instanceID: 16634}
     - Class: 114
       Script: {instanceID: 16674}
     - Class: 114
-      Script: {instanceID: 16744}
+      Script: {instanceID: 16676}
     - Class: 114
-      Script: {instanceID: 18030}
+      Script: {instanceID: 16746}
     - Class: 114
-      Script: {instanceID: 18104}
+      Script: {instanceID: 18032}
     - Class: 114
-      Script: {instanceID: 18194}
+      Script: {instanceID: 18106}
     - Class: 114
-      Script: {instanceID: 18378}
+      Script: {instanceID: 18196}
     - Class: 114
-      Script: {instanceID: 18436}
+      Script: {instanceID: 18380}
     - Class: 114
-      Script: {instanceID: 18646}
+      Script: {instanceID: 18438}
     - Class: 114
-      Script: {instanceID: 19292}
+      Script: {instanceID: 18648}
     - Class: 114
-      Script: {instanceID: 19938}
+      Script: {instanceID: 19294}
     - Class: 114
       Script: {instanceID: 20454}
     - Class: 114
@@ -323,35 +321,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16672}
+      Script: {instanceID: 16634}
     - Class: 114
       Script: {instanceID: 16674}
     - Class: 114
-      Script: {instanceID: 16744}
+      Script: {instanceID: 16676}
     - Class: 114
-      Script: {instanceID: 16786}
+      Script: {instanceID: 16746}
     - Class: 114
-      Script: {instanceID: 16878}
+      Script: {instanceID: 16788}
     - Class: 114
-      Script: {instanceID: 16996}
+      Script: {instanceID: 16880}
     - Class: 114
-      Script: {instanceID: 18104}
+      Script: {instanceID: 16998}
     - Class: 114
-      Script: {instanceID: 18378}
+      Script: {instanceID: 18106}
     - Class: 114
-      Script: {instanceID: 18436}
+      Script: {instanceID: 18380}
     - Class: 114
-      Script: {instanceID: 18646}
+      Script: {instanceID: 18438}
     - Class: 114
-      Script: {instanceID: 19716}
+      Script: {instanceID: 18648}
     - Class: 114
-      Script: {instanceID: 19720}
+      Script: {instanceID: 19718}
     - Class: 114
-      Script: {instanceID: 19780}
+      Script: {instanceID: 19722}
     - Class: 114
-      Script: {instanceID: 19910}
+      Script: {instanceID: 19782}
     - Class: 114
-      Script: {instanceID: 19938}
+      Script: {instanceID: 19912}
     - Class: 114
       Script: {instanceID: 20454}
     - Class: 114
@@ -425,6 +423,12 @@ ScriptsOnlyBuild:
     - Class: 225
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 104ea96deab8e88126e1f09beddde961
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: b5007673bbbdb9d12597a1d8201370f5
@@ -1217,12 +1221,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities
     namespaceName: Photon.Pun.UtilityScripts
     className: StatesGui
-  - hash:
-      serializedVersion: 2
-      Hash: 104ea96deab8e88126e1f09beddde961
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a

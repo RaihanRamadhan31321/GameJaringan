@@ -1458,11 +1458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4817124922774391201, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.83711
+      value: 24.7
       objectReference: {fileID: 0}
     - target: {fileID: 4817124922774391201, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.218628
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 4817124922774391201, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1496,6 +1496,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5325116284936385456, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
+      propertyPath: losePanel
+      value: 
+      objectReference: {fileID: 1594253347}
+    - target: {fileID: 5325116284936385456, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
+      propertyPath: winnerPanel
+      value: 
+      objectReference: {fileID: 1265386400}
+    - target: {fileID: 5325116284936385456, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
+      propertyPath: redShirtCharacter
+      value: 
+      objectReference: {fileID: 3258259354484004945}
+    - target: {fileID: 5325116284936385456, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
+      propertyPath: blueShirtCharacter
+      value: 
+      objectReference: {fileID: 1325302697}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2527,7 +2543,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1383467052}
   - component: {fileID: 1383467051}
-  - component: {fileID: 1383467053}
   m_Layer: 0
   m_Name: Exit Game
   m_TagString: Untagged
@@ -2562,22 +2577,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1383467053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383467050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfa20279f4ff1f64098a430b2410333b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  losePanel: {fileID: 1594253347}
-  winnerPanel: {fileID: 1265386400}
-  redShirtCharacter: {fileID: 3258259354484004945}
-  blueShirtCharacter: {fileID: 1325302697}
 --- !u!1 &1403604694
 GameObject:
   m_ObjectHideFlags: 0
@@ -4629,7 +4628,7 @@ Transform:
   m_GameObject: {fileID: 2044642818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.8, y: 1, z: -9.999999}
+  m_LocalPosition: {x: 0, y: 0, z: -9.999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4810,7 +4809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4817124922774391201, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.83711
+      value: 23.5
       objectReference: {fileID: 0}
     - target: {fileID: 4817124922774391201, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5187,11 +5186,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3470808992805302713, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 22.8
       objectReference: {fileID: 0}
     - target: {fileID: 3470808992805302713, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3615635383027143748, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: sceneViewId

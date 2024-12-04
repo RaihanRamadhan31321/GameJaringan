@@ -20,23 +20,28 @@ public class GameMechanics : MonoBehaviourPunCallbacks
         winnerPanel.SetActive(false);
 
         // Status "U" langsung aktif pada karakter baju merah
-        if (redShirtCharacter != null)
+        if (redShirtCharacter != null && blueShirtCharacter != null)
         {
             currentPlayerWithStatusU = redShirtCharacter;
-            SetStatusU(redShirtCharacter, true); // Aktifkan status "U" pada karakter baju merah
-        }
-        else
-        {
-            Debug.LogError("Red shirt character is not assigned!");
-        }
-
-        if (blueShirtCharacter != null)
-        {
+            SetStatusU(redShirtCharacter, true);  // Aktifkan status "U" pada karakter baju merah
             SetStatusU(blueShirtCharacter, false); // Nonaktifkan status "U" pada karakter baju biru
         }
         else
         {
-            Debug.LogError("Blue shirt character is not assigned!");
+            Debug.LogError("Characters are not properly assigned!");
+        }
+    }
+
+    void Update()
+    {
+        // Pastikan Status U mengikuti posisi karakter yang berjaga
+        if (currentPlayerWithStatusU != null)
+        {
+            Transform statusUTransform = currentPlayerWithStatusU.transform.Find("StatusU");
+            if (statusUTransform != null)
+            {
+                statusUTransform.position = currentPlayerWithStatusU.transform.position + new Vector3(0, 1.5f, 0); // Letakkan di atas karakter
+            }
         }
     }
 
@@ -94,18 +99,20 @@ public class GameMechanics : MonoBehaviourPunCallbacks
         if (currentPlayerWithStatusU == redShirtCharacter)
         {
             losePanel.SetActive(true); // Karakter baju merah kalah
+            winnerPanel.SetActive(false);
         }
         else if (currentPlayerWithStatusU == blueShirtCharacter)
         {
             losePanel.SetActive(true); // Karakter baju biru kalah
+            winnerPanel.SetActive(false);
         }
 
         // Pemain tanpa status "U" menang
-        if (currentPlayerWithStatusU == redShirtCharacter)
+        if (currentPlayerWithStatusU != redShirtCharacter)
         {
             winnerPanel.SetActive(true); // Karakter baju biru menang
         }
-        else if (currentPlayerWithStatusU == blueShirtCharacter)
+        else if (currentPlayerWithStatusU != blueShirtCharacter)
         {
             winnerPanel.SetActive(true); // Karakter baju merah menang
         }
