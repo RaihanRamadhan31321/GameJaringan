@@ -518,7 +518,7 @@ Transform:
   m_GameObject: {fileID: 244011809}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.7, y: 1.3813477, z: 1.5744143}
+  m_LocalPosition: {x: -23.699951, y: 1.3813477, z: 1.5744143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1463,6 +1463,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 941986746527489028, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       insertIndex: -1
       addedObject: {fileID: 675775750}
+    - targetCorrespondingSourceObject: {fileID: 941986746527489028, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 675775751}
   m_SourcePrefab: {fileID: 100100000, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
 --- !u!4 &675775748 stripped
 Transform:
@@ -1490,6 +1493,51 @@ MonoBehaviour:
   winnerPanel: {fileID: 1265386400}
   redShirtCharacter: {fileID: 3258259354484004945}
   blueShirtCharacter: {fileID: 1325302697}
+--- !u!61 &675775751
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675775749}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -114.36164}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 104.20045, y: 83.340004}
+    newSize: {x: 104.20045, y: 83.340004}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 104.20045, y: 143.97829}
+  m_EdgeRadius: 0
 --- !u!1 &691345121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,6 +2161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball-01
       objectReference: {fileID: 0}
+    - target: {fileID: 941986746527489028, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4817124922774391201, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1
@@ -2161,6 +2213,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 941986746527489028, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1200488723}
+    - targetCorrespondingSourceObject: {fileID: 941986746527489028, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1200488725}
   m_SourcePrefab: {fileID: 100100000, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
 --- !u!4 &1200488721 stripped
 Transform:
@@ -2188,6 +2243,51 @@ MonoBehaviour:
   winnerPanel: {fileID: 1265386400}
   redShirtCharacter: {fileID: 3258259354484004945}
   blueShirtCharacter: {fileID: 1325302697}
+--- !u!61 &1200488725
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200488722}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 391.02002, y: -108.53643}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 104.20045, y: 83.340004}
+    newSize: {x: 104.20045, y: 83.340004}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 112.482056, y: 148.75688}
+  m_EdgeRadius: 0
 --- !u!1 &1236484966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,7 +2358,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Time : 180'
+  m_Text: 
 --- !u!222 &1236484969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4942,6 +5042,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: losePanel
+      value: 
+      objectReference: {fileID: 1594253347}
+    - target: {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 1236484968}
+    - target: {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: winnerPanel
+      value: 
+      objectReference: {fileID: 1265386400}
+    - target: {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: panelSetting
       value: 
       objectReference: {fileID: 592711613}
@@ -5221,6 +5341,26 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: losePanel
+      value: 
+      objectReference: {fileID: 1594253347}
+    - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 1236484968}
+    - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: elapsedTime
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: winnerPanel
+      value: 
+      objectReference: {fileID: 1265386400}
+    - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: panelSetting
       value: 
       objectReference: {fileID: 592711613}
@@ -5235,7 +5375,11 @@ PrefabInstance:
     - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: blueShirtCharacter
       value: 
-      objectReference: {fileID: 913842052}
+      objectReference: {fileID: 1325302697}
+    - target: {fileID: 7966221548563870328, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2107197880431622794, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
     m_RemovedGameObjects: []
