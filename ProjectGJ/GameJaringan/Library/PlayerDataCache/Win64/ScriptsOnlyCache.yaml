@@ -146,6 +146,9 @@ ScriptsOnlyBuild:
     methodName: OnConnectedToMaster
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
+    methodName: ActivatePanel
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
     methodName: OnLoginButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
@@ -161,6 +164,9 @@ ScriptsOnlyBuild:
     methodName: ActivatePanel
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
+    methodName: ActivatePanel
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
     methodName: OnStartGameButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
@@ -168,6 +174,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnConnectedToMaster
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnStartSoloGameButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnJoinRoomByNameClicked
@@ -192,7 +201,99 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Object
     methodName: set_name
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.Object
+    methodName: set_name
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.Object
+    methodName: set_name
+  - assembly: Assembly-CSharp
+    fullTypeName: ExitGame
+    methodName: OnExitButtonClicked
   sceneClasses:
+    Assets/Scenes/Game1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16634}
+    - Class: 114
+      Script: {instanceID: 16674}
+    - Class: 114
+      Script: {instanceID: 16676}
+    - Class: 114
+      Script: {instanceID: 16746}
+    - Class: 114
+      Script: {instanceID: 18032}
+    - Class: 114
+      Script: {instanceID: 18106}
+    - Class: 114
+      Script: {instanceID: 18196}
+    - Class: 114
+      Script: {instanceID: 18380}
+    - Class: 114
+      Script: {instanceID: 18438}
+    - Class: 114
+      Script: {instanceID: 18648}
+    - Class: 114
+      Script: {instanceID: 19294}
+    - Class: 114
+      Script: {instanceID: 20454}
+    - Class: 114
+      Script: {instanceID: 21142}
+    - Class: 114
+      Script: {instanceID: 21332}
+    - Class: 114
+      Script: {instanceID: 22128}
+    - Class: 114
+      Script: {instanceID: 22176}
+    - Class: 114
+      Script: {instanceID: 22814}
+    - Class: 114
+      Script: {instanceID: 24708}
+    - Class: 114
+      Script: {instanceID: 26044}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/GamePlay.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -255,9 +356,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22814}
     - Class: 114
-      Script: {instanceID: 23124}
+      Script: {instanceID: 24708}
     - Class: 114
-      Script: {instanceID: 24710}
+      Script: {instanceID: 26044}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -368,21 +469,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22824}
     - Class: 114
-      Script: {instanceID: 23124}
+      Script: {instanceID: 23364}
     - Class: 114
-      Script: {instanceID: 23366}
+      Script: {instanceID: 23564}
     - Class: 114
-      Script: {instanceID: 23566}
+      Script: {instanceID: 24230}
     - Class: 114
-      Script: {instanceID: 24232}
+      Script: {instanceID: 24234}
     - Class: 114
-      Script: {instanceID: 24236}
+      Script: {instanceID: 24708}
     - Class: 114
-      Script: {instanceID: 24710}
+      Script: {instanceID: 24876}
     - Class: 114
-      Script: {instanceID: 24878}
+      Script: {instanceID: 25288}
     - Class: 114
-      Script: {instanceID: 25290}
+      Script: {instanceID: 26044}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1600,7 +1701,7 @@ ScriptsOnlyBuild:
     className: FriendListView
   - hash:
       serializedVersion: 2
-      Hash: b525a985495590df007c824f8d99937f
+      Hash: 42514da98030e587cf51ba4e31136729
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ManajerJaringan
@@ -2508,4 +2609,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/LoginLobby.unity
   - Assets/Scenes/GamePlay.unity
+  - Assets/Scenes/Game1.unity
   playerPath: C:/GitHub/Debug Game Jaringan/GameJaringan.exe

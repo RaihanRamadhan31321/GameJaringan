@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 96080162889538504}
   - component: {fileID: 834721632729903860}
   - component: {fileID: 2209432627103957084}
-  - component: {fileID: 1313470877415984261}
-  - component: {fileID: 1675783845103311996}
-  - component: {fileID: 1636753664218160505}
-  - component: {fileID: 5473257653098331284}
+  - component: {fileID: 1092520601441114150}
+  - component: {fileID: 5243391956826880708}
+  - component: {fileID: 660422926719735037}
+  - component: {fileID: 1412954522496916219}
   m_Layer: 0
   m_Name: Karakter-Baju biru
   m_TagString: Untagged
@@ -184,27 +184,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1313470877415984261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4227708333517529915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9cbd9420ba317b4981986e681a63019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  redShirtCharacter: {fileID: 0}
-  blueShirtCharacter: {fileID: 0}
-  virtualCameraRed: {fileID: 0}
-  virtualCameraBlue: {fileID: 0}
-  panelSetting: {fileID: 0}
-  musicVolumeSlider: {fileID: 0}
-  backgroundMusic: {fileID: 0}
-  gameStartTime: 120
---- !u!114 &1675783845103311996
+--- !u!114 &1092520601441114150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,12 +203,49 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 1636753664218160505}
-  - {fileID: 5473257653098331284}
+  - {fileID: 660422926719735037}
+  - {fileID: 1412954522496916219}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &1636753664218160505
+--- !u!114 &5243391956826880708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227708333517529915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9cbd9420ba317b4981986e681a63019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redShirtCharacter: {fileID: 0}
+  blueShirtCharacter: {fileID: 0}
+  virtualCameraRed: {fileID: 0}
+  virtualCameraBlue: {fileID: 0}
+  panelSetting: {fileID: 0}
+  musicVolumeSlider: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  timerText: {fileID: 0}
+  losePanel: {fileID: 0}
+  winnerPanel: {fileID: 0}
+  gameDuration: 120
+  moveSpeed: 5
+--- !u!114 &660422926719735037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227708333517529915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35144820bcc25444bb8f0fd767d9423e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SmoothingDelay: 5
+--- !u!114 &1412954522496916219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,16 +261,3 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &5473257653098331284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4227708333517529915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35144820bcc25444bb8f0fd767d9423e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SmoothingDelay: 5

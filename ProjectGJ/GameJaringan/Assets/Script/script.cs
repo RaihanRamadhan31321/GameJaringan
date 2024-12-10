@@ -32,6 +32,9 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     public InputField InputNamaRoomJoin; // Input untuk memasukkan nama room
     public Button tombolGabungDenganNama; // Tombol untuk bergabung berdasarkan nama
 
+    [Header("Solo Mode Panel")]
+    public GameObject SoloModePanel; // Panel untuk Mode Solo
+
     [Header("Panel Join Room")]
     public GameObject JoinRoomPanel;
     public Text namaRoomJoinText;
@@ -242,6 +245,7 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
             Debug.LogWarning("Hanya Master Client yang dapat memulai permainan!");
         }
     }
+
     public override void OnCreatedRoom()
     {
         Debug.Log(PhotonNetwork.CurrentRoom.Name + " berhasil dibuat.");
@@ -259,6 +263,12 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         {
             Debug.Log("Master Client: Menunggu pemain lain.");
         }
+    }
+
+    public void OnSoloModeButtonClicked()
+    {
+        Debug.Log("Masuk ke Mode Solo...");
+        ActivatePanel(SoloModePanel.name);
     }
 
     private void UpdatePlayerInfo()
@@ -284,6 +294,12 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         ActivatePanel(DaftarRoomPanel.name);
     }
 
+    public void OnStartSoloGameButtonClicked()
+    {
+        Debug.Log("Memulai permainan Mode Solo...");
+        SceneManager.LoadScene("Game1"); // Pastikan Scene ini sudah ada di Build Settings
+    }
+
     public void ActivatePanel(string panelToBeActivated)
     {
         PanelLogin.SetActive(panelToBeActivated.Equals(PanelLogin.name));
@@ -291,5 +307,6 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         BuatRoomPanel.SetActive(panelToBeActivated.Equals(BuatRoomPanel.name));
         DaftarRoomPanel.SetActive(panelToBeActivated.Equals(DaftarRoomPanel.name));
         JoinRoomPanel.SetActive(panelToBeActivated.Equals(JoinRoomPanel.name));
+        SoloModePanel.SetActive(panelToBeActivated.Equals(SoloModePanel.name)); // Aktifkan Panel Solo
     }
 }

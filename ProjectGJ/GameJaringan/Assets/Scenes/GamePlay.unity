@@ -5041,6 +5041,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1092520601441114150, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: sceneViewId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: losePanel
       value: 
@@ -5149,6 +5153,42 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: losePanel
+      value: 
+      objectReference: {fileID: 1594253347}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 1236484968}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: winnerPanel
+      value: 
+      objectReference: {fileID: 1265386400}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: panelSetting
+      value: 
+      objectReference: {fileID: 592711613}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: virtualCameraRed
+      value: 
+      objectReference: {fileID: 365970395}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: musicVolumeSlider
+      value: 
+      objectReference: {fileID: 2035423411}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: redShirtCharacter
+      value: 
+      objectReference: {fileID: 3258259354484004945}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: virtualCameraBlue
+      value: 
+      objectReference: {fileID: 1486927061}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: blueShirtCharacter
+      value: 
+      objectReference: {fileID: 1325302697}
     - target: {fileID: 5724843905475882121, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: statusU
       value: 
