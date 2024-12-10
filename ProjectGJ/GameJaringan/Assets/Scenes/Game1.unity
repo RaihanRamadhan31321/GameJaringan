@@ -1056,7 +1056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4817124922774391201, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: 24.5
       objectReference: {fileID: 0}
     - target: {fileID: 4817124922774391201, guid: 6c533bf16f9768d4db653be953e76594, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1144,7 +1144,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 403.38254, y: -114.36164}
+  m_Offset: {x: -0.32822037, y: -114.36164}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1155,7 +1155,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 112.18817, y: 143.97829}
+  m_Size: {x: 114.818214, y: 143.97829}
   m_EdgeRadius: 0
 --- !u!1 &593508445
 GameObject:
@@ -4296,6 +4296,14 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1092520601441114150, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092520601441114150, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: ObservedComponents.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: losePanel
       value: 
@@ -4490,6 +4498,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1313470877415984261, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+    - {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+    - {fileID: 660422926719735037, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+    - {fileID: 1412954522496916219, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+    - {fileID: 1092520601441114150, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 997888428396799534, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
@@ -4499,6 +4511,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4227708333517529915, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       insertIndex: 2
       addedObject: {fileID: 1944986719}
+    - targetCorrespondingSourceObject: {fileID: 4227708333517529915, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1944986721}
+    - targetCorrespondingSourceObject: {fileID: 4227708333517529915, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1944986720}
   m_SourcePrefab: {fileID: 100100000, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
 --- !u!4 &1944986717 stripped
 Transform:
@@ -4531,6 +4549,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1944986720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944986718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4c8bf7d3d71ca4d9160ff0e6d2fbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1944986721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944986718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c344fdb3e402cf24d8b4bc6687709a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redShirtCharacter: {fileID: 2099647351}
+  blueShirtCharacter: {fileID: 1944986718}
+  blueShirtAgent: {fileID: 0}
+  chaseSpeed: 5
+  fleeSpeed: 10
+  timerText: {fileID: 1423130988}
+  losePanel: {fileID: 803425164}
+  winnerPanel: {fileID: 1841416314}
+  gameDuration: 60
 --- !u!1 &2038836316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,6 +4918,14 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3615635383027143748, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615635383027143748, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: ObservedComponents.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: losePanel
       value: 
@@ -4913,12 +4972,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2107197880431622794, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+    - {fileID: 274093202861126828, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+    - {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+    - {fileID: 305380202647519169, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+    - {fileID: 3615635383027143748, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1533407651079790633, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 667009280}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2352457695407448713, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2099647353}
+    - targetCorrespondingSourceObject: {fileID: 2352457695407448713, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2099647352}
   m_SourcePrefab: {fileID: 100100000, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
 --- !u!114 &2099647349 stripped
 MonoBehaviour:
@@ -4941,6 +5010,39 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2352457695407448713, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
   m_PrefabInstance: {fileID: 2099647348}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2099647352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099647351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4c8bf7d3d71ca4d9160ff0e6d2fbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2099647353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099647351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c344fdb3e402cf24d8b4bc6687709a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redShirtCharacter: {fileID: 2099647351}
+  blueShirtCharacter: {fileID: 1944986718}
+  blueShirtAgent: {fileID: 0}
+  chaseSpeed: 5
+  fleeSpeed: 10
+  timerText: {fileID: 1423130988}
+  losePanel: {fileID: 803425164}
+  winnerPanel: {fileID: 1841416314}
+  gameDuration: 60
 --- !u!1 &2109010852
 GameObject:
   m_ObjectHideFlags: 0
