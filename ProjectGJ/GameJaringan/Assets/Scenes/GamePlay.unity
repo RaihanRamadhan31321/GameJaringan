@@ -938,8 +938,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 403428258}
+  - component: {fileID: 403428259}
   m_Layer: 0
-  m_Name: GameSystems
+  m_Name: 'Script Finish Game '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -960,6 +961,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &403428259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403428257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a69b6ffb5627445a710c898a40d492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &592711613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,16 +1134,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: cfa20279f4ff1f64098a430b2410333b, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
+      - m_Target: {fileID: 403428259}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: sceneName
+          m_StringArgument: LoginLobby
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &608173469
@@ -1489,10 +1502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa20279f4ff1f64098a430b2410333b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  losePanel: {fileID: 1594253347}
-  winnerPanel: {fileID: 1265386400}
-  redShirtCharacter: {fileID: 3258259354484004945}
-  blueShirtCharacter: {fileID: 1325302697}
 --- !u!61 &675775751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2239,10 +2248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa20279f4ff1f64098a430b2410333b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  losePanel: {fileID: 1594253347}
-  winnerPanel: {fileID: 1265386400}
-  redShirtCharacter: {fileID: 3258259354484004945}
-  blueShirtCharacter: {fileID: 1325302697}
 --- !u!61 &1200488725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4410,16 +4415,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: cfa20279f4ff1f64098a430b2410333b, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
+      - m_Target: {fileID: 403428259}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: sceneName
+          m_StringArgument: LoginLobby
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2016749282
@@ -5166,6 +5171,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1265386400}
     - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: gameDuration
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: panelSetting
       value: 
       objectReference: {fileID: 592711613}
@@ -5400,6 +5409,10 @@ PrefabInstance:
       propertyPath: winnerPanel
       value: 
       objectReference: {fileID: 1265386400}
+    - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: gameDuration
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: panelSetting
       value: 

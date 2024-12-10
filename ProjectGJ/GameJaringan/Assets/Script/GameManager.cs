@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private bool isPanelSettingActive = false;
 
     [Header("Gameplay Settings")]
-    public float gameDuration = 120f; // Durasi permainan dalam detik (120 detik)
+    public float gameDuration = 60f; // Durasi permainan dalam detik (120 detik)
     private float remainingTime; // Waktu tersisa
     private bool isGameRunning = true; // Apakah permainan masih berjalan
     public float moveSpeed = 5f; // Kecepatan pergerakan pemain
