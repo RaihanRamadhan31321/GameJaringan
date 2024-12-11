@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class SinglePlayers : MonoBehaviour
@@ -14,7 +13,6 @@ public class SinglePlayers : MonoBehaviour
     private Rigidbody2D rbBlueShirt;
 
     [Header("AI Settings")]
-    public NavMeshAgent blueShirtAgent;
     public float chaseSpeed = 5f;
     public float fleeSpeed = 10f;
 
@@ -55,14 +53,6 @@ public class SinglePlayers : MonoBehaviour
         // Pastikan UI panel tidak aktif
         losePanel.SetActive(false);
         winnerPanel.SetActive(false);
-
-        // Atur NavMesh Agent untuk karakter baju biru
-        if (blueShirtAgent != null)
-        {
-            blueShirtAgent.speed = chaseSpeed;
-            blueShirtAgent.updateRotation = false;
-            blueShirtAgent.updateUpAxis = false;
-        }
     }
 
     void Update()
@@ -79,22 +69,23 @@ public class SinglePlayers : MonoBehaviour
             }
 
             // Logika AI untuk karakter baju biru
-            if (blueShirtAgent != null && !gameEnded)
+            if (!gameEnded)
             {
                 if (currentPlayerWithStatusU == blueShirtCharacter)
                 {
                     // Mengejar karakter baju merah
-                    blueShirtAgent.speed = chaseSpeed;
-                    blueShirtAgent.SetDestination(redShirtCharacter.transform.position);
+                    Vector2 direction = (redShirtCharacter.transform.position - blueShirtCharacter.transform.position).normalized;
+                    rbBlueShirt.velocity = direction * chaseSpeed;
                 }
                 else
                 {
                     // Kabur menjauh dari karakter baju merah
-                    Vector3 fleeDirection = (blueShirtCharacter.transform.position - redShirtCharacter.transform.position).normalized;
-                    Vector3 fleePosition = blueShirtCharacter.transform.position + fleeDirection * 10f; // Kabur sejauh 10 unit
-                    blueShirtAgent.speed = fleeSpeed;
-                    blueShirtAgent.SetDestination(fleePosition);
+                    Vector2 direction = (blueShirtCharacter.transform.position - redShirtCharacter.transform.position).normalized;
+                    rbBlueShirt.velocity = direction * fleeSpeed;
                 }
+
+                // Flip karakter baju biru berdasarkan posisi karakter baju merah
+                FlipBlueShirt(redShirtCharacter.transform.position.x - blueShirtCharacter.transform.position.x);
             }
 
             // Kontrol pemain karakter baju merah
@@ -146,6 +137,20 @@ public class SinglePlayers : MonoBehaviour
         redShirtCharacter.transform.localScale = scale;
     }
 
+    void FlipBlueShirt(float horizontalDifference)
+    {
+        Vector3 scale = blueShirtCharacter.transform.localScale;
+        if (horizontalDifference > 0) // Karakter merah berada di kanan
+        {
+            scale.x = Mathf.Abs(scale.x); // Pastikan orientasi positif
+        }
+        else if (horizontalDifference < 0) // Karakter merah berada di kiri
+        {
+            scale.x = -Mathf.Abs(scale.x); // Balik ke arah negatif
+        }
+        blueShirtCharacter.transform.localScale = scale;
+    }
+
     void SetRedShirtAnimation(int state)
     {
         if (animatorRedShirt != null)
@@ -165,6 +170,15 @@ public class SinglePlayers : MonoBehaviour
         else if (collision.gameObject == blueShirtCharacter && currentPlayerWithStatusU == redShirtCharacter)
         {
             TransferStatusU(blueShirtCharacter);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (!gameEnded && collision.gameObject.CompareTag("Player"))
+        {
+            GameObject otherPlayer = collision.gameObject;
+            TransferStatusU(otherPlayer);
         }
     }
 
@@ -201,20 +215,17 @@ public class SinglePlayers : MonoBehaviour
 
         if (currentPlayerWithStatusU == redShirtCharacter)
         {
-            losePanel.SetActive(false);
-            winnerPanel.SetActive(true); // Karakter baju merah menang
-        }
-        else
-        {
             losePanel.SetActive(true); // Karakter baju merah kalah
             winnerPanel.SetActive(false);
         }
-
-        // Hentikan AI karakter baju biru
-        if (blueShirtAgent != null)
+        else
         {
-            blueShirtAgent.isStopped = true;
+            losePanel.SetActive(false);
+            winnerPanel.SetActive(true); // Karakter baju merah menang
         }
+
+        // Hentikan pergerakan karakter baju biru
+        rbBlueShirt.velocity = Vector2.zero;
     }
 
     private void UpdateTimerUI()
