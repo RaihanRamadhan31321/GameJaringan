@@ -29,6 +29,10 @@ public class SinglePlayers : MonoBehaviour
     private bool isGameRunning = true;
     private bool gameEnded = false;
 
+    [Header("Movement Settings")]
+    public float moveSpeed = 5f;
+    public float sprintMultiplier = 1.5f;
+
     void Start()
     {
         // Pastikan kedua karakter aktif
@@ -92,6 +96,61 @@ public class SinglePlayers : MonoBehaviour
                     blueShirtAgent.SetDestination(fleePosition);
                 }
             }
+
+            // Kontrol pemain karakter baju merah
+            HandleRedShirtMovement();
+        }
+    }
+
+    void HandleRedShirtMovement()
+    {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        Vector2 movement = new Vector2(horizontal, vertical).normalized;
+
+        float speed = moveSpeed;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed *= sprintMultiplier;
+            SetRedShirtAnimation(2); // Run
+        }
+        else if (movement.magnitude > 0)
+        {
+            SetRedShirtAnimation(1); // Walk
+        }
+        else
+        {
+            SetRedShirtAnimation(0); // Idle
+        }
+
+        rbRedShirt.velocity = movement * speed;
+
+        // Flip karakter berdasarkan arah horizontal
+        if (horizontal != 0)
+        {
+            FlipCharacter(horizontal);
+        }
+    }
+
+    void FlipCharacter(float horizontal)
+    {
+        Vector3 scale = redShirtCharacter.transform.localScale;
+        if (horizontal > 0) // Gerak ke kanan
+        {
+            scale.x = Mathf.Abs(scale.x); // Pastikan orientasi positif
+        }
+        else if (horizontal < 0) // Gerak ke kiri
+        {
+            scale.x = -Mathf.Abs(scale.x); // Balik ke arah negatif
+        }
+        redShirtCharacter.transform.localScale = scale;
+    }
+
+    void SetRedShirtAnimation(int state)
+    {
+        if (animatorRedShirt != null)
+        {
+            animatorRedShirt.SetInteger("State", state);
         }
     }
 
