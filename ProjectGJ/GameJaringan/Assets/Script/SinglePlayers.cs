@@ -31,6 +31,9 @@ public class SinglePlayers : MonoBehaviour
     public float moveSpeed = 5f;
     public float sprintMultiplier = 1.5f;
 
+    private bool redShirtStatusU = false;
+    private bool blueShirtStatusU = true;
+
     void Start()
     {
         // Pastikan kedua karakter aktif
@@ -46,9 +49,8 @@ public class SinglePlayers : MonoBehaviour
         remainingTime = gameDuration;
 
         // Status "U" dimulai pada karakter baju biru
-        currentPlayerWithStatusU = blueShirtCharacter;
-        SetStatusU(blueShirtCharacter, true);
         SetStatusU(redShirtCharacter, false);
+        SetStatusU(blueShirtCharacter, true);
 
         // Pastikan UI panel tidak aktif
         losePanel.SetActive(false);
@@ -71,7 +73,7 @@ public class SinglePlayers : MonoBehaviour
             // Logika AI untuk karakter baju biru
             if (!gameEnded)
             {
-                if (currentPlayerWithStatusU == blueShirtCharacter)
+                if (blueShirtStatusU)
                 {
                     // Mengejar karakter baju merah
                     Vector2 direction = (redShirtCharacter.transform.position - blueShirtCharacter.transform.position).normalized;
@@ -163,36 +165,15 @@ public class SinglePlayers : MonoBehaviour
     {
         if (gameEnded) return;
 
-        if (collision.gameObject == redShirtCharacter && currentPlayerWithStatusU == blueShirtCharacter)
+        if (collision.gameObject == blueShirtCharacter || collision.gameObject == redShirtCharacter)
         {
-            TransferStatusU(redShirtCharacter);
+            // Toggle Status "U"
+            redShirtStatusU = !redShirtStatusU;
+            blueShirtStatusU = !blueShirtStatusU;
+
+            SetStatusU(redShirtCharacter, redShirtStatusU);
+            SetStatusU(blueShirtCharacter, blueShirtStatusU);
         }
-        else if (collision.gameObject == blueShirtCharacter && currentPlayerWithStatusU == redShirtCharacter)
-        {
-            TransferStatusU(blueShirtCharacter);
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (!gameEnded && collision.gameObject.CompareTag("Player"))
-        {
-            GameObject otherPlayer = collision.gameObject;
-            TransferStatusU(otherPlayer);
-        }
-    }
-
-    public void TransferStatusU(GameObject newPlayer)
-    {
-        if (newPlayer == null || currentPlayerWithStatusU == null)
-            return;
-
-        // Nonaktifkan status "U" dari pemain saat ini
-        SetStatusU(currentPlayerWithStatusU, false);
-
-        // Aktifkan status "U" untuk pemain baru
-        currentPlayerWithStatusU = newPlayer;
-        SetStatusU(currentPlayerWithStatusU, true);
     }
 
     private void SetStatusU(GameObject player, bool isActive)
@@ -213,7 +194,7 @@ public class SinglePlayers : MonoBehaviour
         gameEnded = true;
         isGameRunning = false;
 
-        if (currentPlayerWithStatusU == redShirtCharacter)
+        if (redShirtStatusU)
         {
             losePanel.SetActive(true); // Karakter baju merah kalah
             winnerPanel.SetActive(false);
@@ -224,8 +205,9 @@ public class SinglePlayers : MonoBehaviour
             winnerPanel.SetActive(true); // Karakter baju merah menang
         }
 
-        // Hentikan pergerakan karakter baju biru
+        // Hentikan pergerakan karakter
         rbBlueShirt.velocity = Vector2.zero;
+        rbRedShirt.velocity = Vector2.zero;
     }
 
     private void UpdateTimerUI()

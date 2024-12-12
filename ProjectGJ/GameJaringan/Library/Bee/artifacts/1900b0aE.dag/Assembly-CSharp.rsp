@@ -415,7 +415,6 @@
 "Assets/Script/LoadScene.cs"
 "Assets/Script/script.cs"
 "Assets/Script/SinglePlayers.cs"
-"Assets/Script/StatusU.cs"
 -langversion:9.0
 /deterministic
 /optimize+
