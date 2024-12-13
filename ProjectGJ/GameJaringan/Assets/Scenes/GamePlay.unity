@@ -5098,6 +5098,10 @@ PrefabInstance:
       propertyPath: blueShirtCharacter
       value: 
       objectReference: {fileID: 1325302697}
+    - target: {fileID: 1412954522496916219, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: m_SynchronizeRotation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1675783845103311996, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: sceneViewId
       value: 2
@@ -5164,7 +5168,7 @@ PrefabInstance:
       objectReference: {fileID: 1594253347}
     - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: moveSpeed
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: timerText
@@ -5182,6 +5186,10 @@ PrefabInstance:
       propertyPath: panelSetting
       value: 
       objectReference: {fileID: 592711613}
+    - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
+      propertyPath: sprintMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5243391956826880708, guid: 3b888adadc065ed47bacea0e952dfafd, type: 3}
       propertyPath: virtualCameraRed
       value: 
@@ -5399,7 +5407,7 @@ PrefabInstance:
       objectReference: {fileID: 1594253347}
     - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: moveSpeed
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: timerText
@@ -5421,6 +5429,10 @@ PrefabInstance:
       propertyPath: panelSetting
       value: 
       objectReference: {fileID: 592711613}
+    - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: sprintMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: musicVolumeSlider
       value: 

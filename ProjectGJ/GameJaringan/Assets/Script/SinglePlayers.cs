@@ -20,6 +20,8 @@ public class SinglePlayers : MonoBehaviour
     public Text timerText;
     public GameObject losePanel;
     public GameObject winnerPanel;
+    public GameObject settingsPanel;
+    public Slider soundSlider;
 
     [Header("Gameplay Settings")]
     public float gameDuration = 60f;
@@ -55,10 +57,19 @@ public class SinglePlayers : MonoBehaviour
         // Pastikan UI panel tidak aktif
         losePanel.SetActive(false);
         winnerPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+
+        // Inisialisasi slider suara
+        soundSlider.onValueChanged.AddListener(AdjustSoundVolume);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ToggleSettingsPanel();
+        }
+
         if (isGameRunning)
         {
             // Update waktu mundur
@@ -218,5 +229,25 @@ public class SinglePlayers : MonoBehaviour
             int seconds = Mathf.FloorToInt(remainingTime % 60);
             timerText.text = $"{minutes:00}:{seconds:00}";
         }
+    }
+
+    private void ToggleSettingsPanel()
+    {
+        settingsPanel.SetActive(!settingsPanel.activeSelf);
+
+        // Pause game saat panel pengaturan terbuka
+        if (settingsPanel.activeSelf)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+    }
+
+    private void AdjustSoundVolume(float volume)
+    {
+        AudioListener.volume = volume;
     }
 }

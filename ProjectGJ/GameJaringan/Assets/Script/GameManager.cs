@@ -1,3 +1,4 @@
+// Tambahkan library jika perlu
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private float remainingTime; // Waktu tersisa
     private bool isGameRunning = true; // Apakah permainan masih berjalan
     public float moveSpeed = 5f; // Kecepatan pergerakan pemain
+    public float sprintMultiplier = 1.5f; // Faktor pengali kecepatan saat sprint
 
     private PhotonView photonView;
     private bool gameEnded = false;
@@ -165,13 +167,20 @@ public class GameManager : MonoBehaviourPunCallbacks
             // Normalisasi gerakan agar tidak lebih dari 1 saat diagonal
             movement = movement.normalized;
 
+            // Tambahkan kecepatan saat tombol Shift kiri ditekan
+            float currentSpeed = moveSpeed;
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                currentSpeed *= sprintMultiplier;
+            }
+
             // Animasi pergerakan
             if (animator != null)
             {
                 animator.SetFloat("Speed", movement.magnitude);
             }
 
-            // Flip karakter jika berubah arah horizontal
+            // Flip karakter jika berubah arah horizontal (hanya pada sumbu X)
             if (movement.x > 0 && !isFacingRight)
             {
                 Flip();
@@ -180,15 +189,9 @@ public class GameManager : MonoBehaviourPunCallbacks
             {
                 Flip();
             }
-        }
-    }
 
-    void FixedUpdate()
-    {
-        if (rb != null)
-        {
             // Terapkan gerakan ke Rigidbody2D
-            rb.velocity = movement * moveSpeed;
+            rb.velocity = movement * currentSpeed;
         }
     }
 
