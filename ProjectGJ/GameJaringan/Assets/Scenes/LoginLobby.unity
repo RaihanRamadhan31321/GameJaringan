@@ -2724,7 +2724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4247809, y: 0.5}
   m_AnchorMax: {x: 0.61241436, y: 0.6034349}
-  m_AnchoredPosition: {x: 967.4982, y: 430.92114}
+  m_AnchoredPosition: {x: 967.4982, y: 341.24268}
   m_SizeDelta: {x: 222.37697, y: 57.77967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862131533
@@ -3857,7 +3857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3886,7 +3886,7 @@ PrefabInstance:
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 184634518}
+      objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -3913,11 +3913,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnJoinedRoom
+      value: OnConnectedToMaster
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: OnConnectedToMaster
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -3949,7 +3949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4256,7 +4256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.06560957, y: 0.4937396}
   m_AnchorMax: {x: 0.22639045, y: 0.6034349}
-  m_AnchoredPosition: {x: 507.20438, y: 428.67847}
+  m_AnchoredPosition: {x: 507.20438, y: 339}
   m_SizeDelta: {x: 188.84991, y: 62.08847}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430000432
@@ -5336,7 +5336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.716, y: 0.5}
   m_AnchorMax: {x: 0.9534383, y: 0.6034349}
-  m_AnchoredPosition: {x: 1359.2172, y: 428.45923}
+  m_AnchoredPosition: {x: 1359.2172, y: 338.78076}
   m_SizeDelta: {x: 293.2176, y: 79.42627}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1872964703
@@ -5385,7 +5385,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 184634518}
         m_TargetAssemblyTypeName: ManajerJaringan, Assembly-CSharp
-        m_MethodName: OnJoinRoomByNameClicked
+        m_MethodName: OnStartGameButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

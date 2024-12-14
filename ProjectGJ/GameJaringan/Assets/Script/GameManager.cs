@@ -1,4 +1,3 @@
-// Tambahkan library jika perlu
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
@@ -33,7 +32,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private bool isPanelSettingActive = false;
 
     [Header("Gameplay Settings")]
-    public float gameDuration = 60f; // Durasi permainan dalam detik (120 detik)
+    public float gameDuration = 60f; // Durasi permainan dalam detik (60 detik)
     private float remainingTime; // Waktu tersisa
     private bool isGameRunning = true; // Apakah permainan masih berjalan
     public float moveSpeed = 5f; // Kecepatan pergerakan pemain
@@ -54,10 +53,16 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             playerCharacter = redShirtCharacter;
+            virtualCameraRed.Follow = playerCharacter.transform;
+            virtualCameraRed.enabled = true;
+            virtualCameraBlue.enabled = false;
         }
         else
         {
             playerCharacter = blueShirtCharacter;
+            virtualCameraBlue.Follow = playerCharacter.transform;
+            virtualCameraBlue.enabled = true;
+            virtualCameraRed.enabled = false;
         }
 
         // Setup komponen pemain
@@ -65,35 +70,6 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             rb = playerCharacter.GetComponent<Rigidbody2D>();
             animator = playerCharacter.GetComponent<Animator>();
-
-            // Atur kamera untuk mengikuti karakter pemain
-            if (PhotonNetwork.IsMasterClient)
-            {
-                virtualCameraRed.Follow = playerCharacter.transform;
-                virtualCameraRed.enabled = true;
-                virtualCameraBlue.enabled = false;
-
-                // Atur waktu mulai game
-                remainingTime = gameDuration;
-                photonView.RPC("SyncGameStartTime", RpcTarget.Others, gameDuration);
-            }
-            else
-            {
-                virtualCameraBlue.Follow = playerCharacter.transform;
-                virtualCameraBlue.enabled = true;
-                virtualCameraRed.enabled = false;
-            }
-        }
-        else
-        {
-            Debug.LogError("Player Character is not assigned!");
-        }
-
-        // Set volume awal
-        if (backgroundMusic != null)
-        {
-            musicVolumeSlider.value = backgroundMusic.volume;
-            musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
         }
 
         // Status "U" langsung aktif pada karakter baju merah
@@ -103,15 +79,14 @@ public class GameManager : MonoBehaviourPunCallbacks
             SetStatusU(redShirtCharacter, true);  // Aktifkan status "U" pada karakter baju merah
             SetStatusU(blueShirtCharacter, false); // Nonaktifkan status "U" pada karakter baju biru
         }
-        else
-        {
-            Debug.LogError("Characters are not properly assigned!");
-        }
 
         // Pastikan panel setting tidak aktif di awal
         panelSetting.SetActive(false);
         losePanel.SetActive(false);
         winnerPanel.SetActive(false);
+
+        // Set waktu mulai
+        remainingTime = gameDuration;
     }
 
     void Update()
@@ -145,7 +120,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             ToggleSettingPanel();
         }
 
-        // Pastikan Status U mengikuti posisi karakter yang berjaga
+        // Status U mengikuti posisi karakter yang berjaga
         if (currentPlayerWithStatusU != null)
         {
             Transform statusUTransform = currentPlayerWithStatusU.transform.Find("StatusU");
@@ -160,9 +135,17 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         if (playerCharacter != null)
         {
-            // Mengambil input W, A, S, D
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
+            // Mengambil input untuk pergerakan
+            if (playerCharacter == redShirtCharacter) // Pemain pertama (Red Shirt)
+            {
+                movement.x = Input.GetAxisRaw("Horizontal");
+                movement.y = Input.GetAxisRaw("Vertical");
+            }
+            else if (playerCharacter == blueShirtCharacter) // Pemain kedua (Blue Shirt)
+            {
+                movement.x = Input.GetAxisRaw("Horizontal2"); // Gunakan axis custom (Horizontal2) untuk pemain kedua
+                movement.y = Input.GetAxisRaw("Vertical2");   // Gunakan axis custom (Vertical2) untuk pemain kedua
+            }
 
             // Normalisasi gerakan agar tidak lebih dari 1 saat diagonal
             movement = movement.normalized;
@@ -177,7 +160,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             // Animasi pergerakan
             if (animator != null)
             {
-                animator.SetFloat("Speed", movement.magnitude);
+                animator.SetFloat("Speed", movement.magnitude); // Mengatur animasi kecepatan
             }
 
             // Flip karakter jika berubah arah horizontal (hanya pada sumbu X)
@@ -217,21 +200,21 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (gameEnded) return;
 
         // Jika pemain dengan status "U" bertabrakan dengan pemain lain
-        if (collision.gameObject == currentPlayerWithStatusU)
+        if (other.gameObject == currentPlayerWithStatusU)
         {
-            GameObject otherPlayer = collision.otherCollider.gameObject;
+            GameObject otherPlayer = other.gameObject == redShirtCharacter ? blueShirtCharacter : redShirtCharacter;
 
             // Pastikan pemain lain valid
-            if (otherPlayer != redShirtCharacter && otherPlayer != blueShirtCharacter)
-                return;
-
-            // Pindahkan status "U" ke pemain lain
-            TransferStatusU(otherPlayer);
+            if (otherPlayer != null)
+            {
+                // Pindahkan status "U" ke pemain lain
+                TransferStatusU(otherPlayer);
+            }
         }
     }
 

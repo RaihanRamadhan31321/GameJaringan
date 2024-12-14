@@ -1,46 +1,793 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1734086937054059, "dur":13358, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1734086937067431, "dur":219, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1734086937067717, "dur":452, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1734086937069185, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1734086937070635, "dur":96, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":0, "ts":1734086937068306, "dur":4821, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1734086937073131, "dur":1594, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1734086937074725, "dur":116, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1734086937074842, "dur":118, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1734086937075074, "dur":2076, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1734086937068450, "dur":4688, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1734086937073146, "dur":1572, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1734086937068456, "dur":4691, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1734086937073155, "dur":1196, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1734086937074352, "dur":374, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1734086937068563, "dur":4610, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1734086937073184, "dur":1001, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1734086937074186, "dur":601, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1734086937068608, "dur":4587, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1734086937073203, "dur":1083, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1734086937074286, "dur":464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1734086937068531, "dur":4634, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1734086937073172, "dur":1030, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1734086937074203, "dur":564, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1734086937068498, "dur":4658, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1734086937073163, "dur":1116, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1734086937074279, "dur":479, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1734086937068595, "dur":4591, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1734086937073191, "dur":1138, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1734086937074329, "dur":413, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1734086937068660, "dur":4566, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1734086937073233, "dur":881, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1734086937074115, "dur":663, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1734086937068633, "dur":4581, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1734086937073223, "dur":1081, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1734086937074305, "dur":429, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1734086937068689, "dur":4555, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1734086937073250, "dur":504, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1734086937073754, "dur":967, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1734086937068726, "dur":4541, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1734086937073268, "dur":1540, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1734086937068760, "dur":4553, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1734086937073313, "dur":1484, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1734086937080108, "dur":433, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1734152788071346, "dur":2103, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1734152788073472, "dur":229, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1734152788073783, "dur":455, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1734152788074357, "dur":127, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/level0" }}
+,{ "pid":12345, "tid":0, "ts":1734152788074552, "dur":136, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1734152788075297, "dur":113, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1734152788075508, "dur":89, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1734152788076139, "dur":57, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1734152788077033, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":0, "ts":1734152788078959, "dur":104, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":0, "ts":1734152788074274, "dur":5331, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1734152788079611, "dur":514313, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1734152788593925, "dur":612, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1734152788594700, "dur":3277, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1734152788074453, "dur":5167, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1734152788079627, "dur":9034, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1734152788088708, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1734152788088840, "dur":111, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1734152788088961, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1734152788089120, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788089218, "dur":82, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788089301, "dur":442, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788089745, "dur":116, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonChat.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788089862, "dur":164, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788090027, "dur":435, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788090463, "dur":209, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788090673, "dur":85, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788090759, "dur":218, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.Demos.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788090978, "dur":132, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788091111, "dur":369, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788091481, "dur":584, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788092066, "dur":143, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788092211, "dur":153, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788092365, "dur":352, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788092719, "dur":133, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788092854, "dur":146, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788093001, "dur":105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788093107, "dur":163, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788093271, "dur":736, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788094008, "dur":149, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788094158, "dur":343, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Cinemachine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1734152788088839, "dur":5813, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1734152788095048, "dur":85, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1734152788095710, "dur":492219, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1734152788592553, "dur":122, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1734152788592552, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1734152788592711, "dur":1158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1734152788074565, "dur":5102, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788079668, "dur":1035, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788080704, "dur":7992, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788088715, "dur":148, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1734152788088697, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1734152788130304, "dur":5498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1734152788135868, "dur":422, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788135866, "dur":427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788136296, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788136464, "dur":7342, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788143878, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788143876, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788146825, "dur":75, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788144011, "dur":2910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788146976, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.WindModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788146973, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.WindModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788147106, "dur":1334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.WindModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788148545, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.VehiclesModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788148542, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VehiclesModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788148668, "dur":4462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VehiclesModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788153233, "dur":559, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788153817, "dur":3769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788157642, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UnityAnalyticsModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788157640, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788157701, "dur":248, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788157968, "dur":3323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788161393, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.TLSModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788161390, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TLSModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788161451, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788161528, "dur":4145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TLSModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788165857, "dur":3620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ProfilerModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788169545, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.ImageConversionModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788169542, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ImageConversionModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788169598, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788174775, "dur":110, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788169743, "dur":5157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ImageConversionModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788175007, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterRendererModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788175060, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788175199, "dur":4369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterRendererModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788179612, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AIModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788179663, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788179845, "dur":6665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AIModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1734152788186587, "dur":1646, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788188289, "dur":7352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788195705, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788195834, "dur":4297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788200192, "dur":366, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788200587, "dur":5425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788206105, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788206223, "dur":4487, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788210763, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788210888, "dur":11099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788222035, "dur":1158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788223266, "dur":4612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788227953, "dur":1233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788229218, "dur":7433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788236776, "dur":234, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788237032, "dur":11570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788248667, "dur":239, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788248930, "dur":12953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788261928, "dur":1060, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788263030, "dur":5733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788268807, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788268881, "dur":16323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788285297, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1734152788285524, "dur":23806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1734152788309429, "dur":47739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1734152788357220, "dur":236702, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788074595, "dur":5102, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788079698, "dur":990, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788080688, "dur":8013, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788088702, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1734152788112005, "dur":1572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1734152788113654, "dur":20397, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788113651, "dur":20405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788134059, "dur":845, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788134967, "dur":3113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788138170, "dur":11170, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonChat.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788138169, "dur":11173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonChat.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788149407, "dur":4977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonChat.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788154432, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UnityWebRequestAudioModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788154430, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788154549, "dur":3726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788158368, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788158448, "dur":4114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788162623, "dur":102, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.StreamingModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788162620, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.StreamingModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788162727, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788162905, "dur":3558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.StreamingModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788166665, "dur":4793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ParticleSystemModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788171630, "dur":4724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GameCenterModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788176417, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.ClothModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788176414, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClothModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788176471, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788176669, "dur":5240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClothModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1734152788182011, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788182166, "dur":9702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788191977, "dur":51, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788192031, "dur":7880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788199967, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788200069, "dur":5216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788205353, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788205438, "dur":5339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788210832, "dur":383, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788211239, "dur":13945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788225280, "dur":206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788225517, "dur":16209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788241778, "dur":318, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788242115, "dur":7105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788249273, "dur":179, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788249472, "dur":11392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788260938, "dur":374, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788261337, "dur":6968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788268356, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1734152788268453, "dur":21619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1734152788290253, "dur":42469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1734152788332815, "dur":261102, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788074484, "dur":5144, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788079634, "dur":1025, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788080660, "dur":8009, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788088974, "dur":135, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788089110, "dur":76, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788089188, "dur":93, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788089282, "dur":439, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788089727, "dur":109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonChat.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788089838, "dur":187, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788090027, "dur":445, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788090474, "dur":210, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788090686, "dur":98, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788090785, "dur":183, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.Demos.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788090969, "dur":129, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788091099, "dur":375, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788091475, "dur":599, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788092076, "dur":151, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788092229, "dur":154, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788092385, "dur":344, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788092731, "dur":154, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788092886, "dur":161, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788093048, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788093147, "dur":165, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788093313, "dur":708, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788094023, "dur":122, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788094146, "dur":343, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Cinemachine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788094571, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneWindows.json" }}
+,{ "pid":12345, "tid":4, "ts":1734152788094672, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\PackageCache\\com.unity.burst@1.8.15\\.Runtime\\bcl.exe" }}
+,{ "pid":12345, "tid":4, "ts":1734152788088683, "dur":6047, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":4, "ts":1734152788094731, "dur":200, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788095911, "dur":1153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788097066, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1734152788097243, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788097453, "dur":1163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1734152788098692, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1734152788098951, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788099039, "dur":1936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1734152788101044, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1734152788101148, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788101588, "dur":6010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1734152788107654, "dur":14329, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788107650, "dur":14337, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Common.Runtime.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788121989, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788123624, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788122076, "dur":1668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Common.Runtime.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788123818, "dur":11642, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.Utilities.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788123815, "dur":11648, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788135465, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788135608, "dur":6473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788142153, "dur":12767, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788142150, "dur":12773, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.AI.Navigation.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788154924, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788155050, "dur":4048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.AI.Navigation.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788159179, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.TextCoreTextEngineModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788159176, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788159245, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788159466, "dur":4055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788163596, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.SpriteMaskModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788163594, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteMaskModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788163654, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788163746, "dur":5051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteMaskModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788168922, "dur":85, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.InputModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788168920, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788169009, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788169086, "dur":4507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788173667, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.CrashReportingModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788173664, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CrashReportingModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788173743, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788173845, "dur":4213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CrashReportingModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788178150, "dur":101, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.AnimationModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788178147, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AnimationModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788178254, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788178435, "dur":3875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AnimationModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1734152788182857, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788182934, "dur":8981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788191968, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788192166, "dur":5349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788197602, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788197810, "dur":6237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/websocket-sharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788204114, "dur":224, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788204364, "dur":4231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788208656, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788208737, "dur":12113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788221407, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788221600, "dur":7869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788229523, "dur":585, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788230120, "dur":1135, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788231259, "dur":10258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788241593, "dur":253, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788241855, "dur":72, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788250058, "dur":80, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788241929, "dur":8222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788250261, "dur":832, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788263537, "dur":130, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788251164, "dur":12526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788263825, "dur":367, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788264217, "dur":15032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788280132, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788280219, "dur":112, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1734152788280335, "dur":16808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1734152788297285, "dur":57454, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1734152788354815, "dur":239133, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788074516, "dur":5122, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788079645, "dur":901, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788080546, "dur":8127, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788088701, "dur":142, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788088682, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788110278, "dur":48602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788158966, "dur":98, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.TilemapModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788158963, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TilemapModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788159066, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788159173, "dur":4504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TilemapModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788163748, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.SharedInternalsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788163745, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SharedInternalsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788163840, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788163961, "dur":51, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788164016, "dur":4676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SharedInternalsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788168765, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.LocalizationModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788168762, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.LocalizationModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788168890, "dur":4002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.LocalizationModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788172988, "dur":394, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788173405, "dur":4687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DSPGraphModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788178159, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.AndroidJNIModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788178156, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AndroidJNIModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788178233, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788182571, "dur":81, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788178370, "dur":4294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AndroidJNIModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1734152788182776, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788191927, "dur":90, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788182935, "dur":9092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788192200, "dur":354, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788192590, "dur":6163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788198816, "dur":232, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788199068, "dur":4821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788203937, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788204018, "dur":5956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788210065, "dur":453, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788221093, "dur":51, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788210541, "dur":10627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788221270, "dur":304, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788221604, "dur":9574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788231236, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788231387, "dur":15360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788246818, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788246894, "dur":11028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788258207, "dur":1975, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788260218, "dur":11070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788271398, "dur":1209, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1734152788272640, "dur":12560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1734152788286235, "dur":71126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1734152788357825, "dur":236126, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788074550, "dur":5097, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788079690, "dur":1011, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788080701, "dur":7986, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788088716, "dur":170, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":6, "ts":1734152788088694, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1734152788131323, "dur":2014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1734152788133430, "dur":15642, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788133428, "dur":15655, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788149152, "dur":5032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788154234, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788154341, "dur":3109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788157505, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UnityConnectModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788157502, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityConnectModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788157647, "dur":3274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityConnectModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788161009, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.TerrainModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788161006, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788161130, "dur":4949, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788166181, "dur":199, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788166395, "dur":4617, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PhysicsModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788171109, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.HotReloadModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788171107, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.HotReloadModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788171168, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788171381, "dur":7405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.HotReloadModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788178879, "dur":54, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.AccessibilityModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788178875, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AccessibilityModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788178935, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788182322, "dur":79, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788179106, "dur":3308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AccessibilityModule.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1734152788182504, "dur":412, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788182961, "dur":6890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788189924, "dur":1307, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788191298, "dur":4514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788195870, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788195981, "dur":6976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Photon3Unity3D.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788203362, "dur":349, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788203733, "dur":6449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788210231, "dur":283, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788210538, "dur":10266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788220860, "dur":227, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788221100, "dur":62, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788221167, "dur":11443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788232758, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788232958, "dur":12295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788245318, "dur":587, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788245935, "dur":5899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788251954, "dur":1845, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788253826, "dur":9455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788263365, "dur":249, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788263909, "dur":9837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788273954, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788274194, "dur":9610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788283982, "dur":248, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1734152788285172, "dur":19492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1734152788304904, "dur":16490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/level2" }}
+,{ "pid":12345, "tid":6, "ts":1734152788321709, "dur":272240, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788074637, "dur":5071, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788079709, "dur":8962, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788088692, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788090040, "dur":2255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1734152788092299, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1734152788093142, "dur":677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1734152788093860, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1734152788093858, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1734152788094025, "dur":1038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1734152788095137, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1734152788095280, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1734152788096572, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\AsyncPluginsFromLinker\\x86_64\\lib_burst_generated.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788096571, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Plugins/x86_64/lib_burst_generated.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788096813, "dur":3308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Plugins/x86_64/lib_burst_generated.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788100127, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788100125, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788100709, "dur":1898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788102682, "dur":367, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Cinemachine.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788102679, "dur":372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Cinemachine.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788103209, "dur":1999, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Cinemachine.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788105258, "dur":14883, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788105255, "dur":14892, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788120150, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788120294, "dur":1720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788122069, "dur":13853, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788122067, "dur":13858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788135986, "dur":7665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788143701, "dur":11532, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788143699, "dur":11535, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.IK.Runtime.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788155235, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788155312, "dur":4578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.IK.Runtime.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788159949, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788160001, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788160075, "dur":4217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788164385, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788164382, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788164455, "dur":208, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788164718, "dur":6134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788171074, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.IMGUIModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788171072, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.IMGUIModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788171142, "dur":193, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788171363, "dur":5586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.IMGUIModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788177006, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.AssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788177003, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788177065, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788177126, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788177183, "dur":5589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1734152788182844, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788191926, "dur":75, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788182974, "dur":9040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788192177, "dur":378, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788192582, "dur":6242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788198872, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788199072, "dur":4345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788203494, "dur":218, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788203737, "dur":8730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788216252, "dur":426, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788216723, "dur":9519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788226314, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788226439, "dur":9550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788236042, "dur":819, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788236896, "dur":10185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788247192, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788247298, "dur":52, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788247353, "dur":10017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788257454, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788257649, "dur":9893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788267602, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788267684, "dur":9151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788276890, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788277001, "dur":13590, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1734152788290687, "dur":53, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1734152788290743, "dur":17946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1734152788308776, "dur":35473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1734152788344430, "dur":249496, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788074680, "dur":5013, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788079701, "dur":960, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788080661, "dur":8023, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788088685, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1734152788090135, "dur":2164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1734152788092337, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788092334, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788093067, "dur":719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788093819, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1734152788094019, "dur":1041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1734152788095143, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1734152788095568, "dur":952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1734152788096588, "dur":111, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788096585, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788097059, "dur":1352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788098464, "dur":488, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788098461, "dur":493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788099032, "dur":1625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1734152788100703, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788100701, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788100886, "dur":11599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788112545, "dur":12907, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonRealtime.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788112543, "dur":12912, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonRealtime.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788125457, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788125638, "dur":1520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonRealtime.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788127219, "dur":14019, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.Demos.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788127210, "dur":14032, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Demos.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788141245, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788141347, "dur":3323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Demos.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788144721, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.XRModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788144717, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.XRModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788144795, "dur":463, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788145293, "dur":1817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.XRModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788147161, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.VirtualTexturingModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788147158, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VirtualTexturingModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788147260, "dur":1305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VirtualTexturingModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788148625, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.VRModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788148623, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VRModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788148770, "dur":3990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VRModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788152909, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UnityWebRequestWWWModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788152905, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788152973, "dur":802, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788153817, "dur":4078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788158031, "dur":87, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UmbraModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788158029, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UmbraModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788158120, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788158241, "dur":3550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UmbraModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788161847, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubstanceModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788161900, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788162062, "dur":3990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubstanceModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788166185, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788166329, "dur":4787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.Physics2DModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788171205, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GridModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788171257, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788171360, "dur":4262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GridModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788175675, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterInputModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788175738, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788175829, "dur":5561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterInputModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1734152788181463, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788181544, "dur":13295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788194977, "dur":212, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788195213, "dur":5535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788200813, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788200909, "dur":184, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788201096, "dur":6162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788207512, "dur":212, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788207777, "dur":9735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonChat.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788217558, "dur":219, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788217858, "dur":8765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788226684, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788226787, "dur":11360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788238212, "dur":2111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788240396, "dur":9802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788250258, "dur":833, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788251116, "dur":19492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788270660, "dur":1955, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1734152788272647, "dur":17939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1734152788290682, "dur":163416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1734152788454144, "dur":139802, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788074735, "dur":4965, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788079701, "dur":8974, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788088700, "dur":138, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":9, "ts":1734152788088682, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":9, "ts":1734152788111449, "dur":5069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":9, "ts":1734152788116579, "dur":198, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788116577, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Tilemap.Extras.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788116781, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788116876, "dur":3867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Tilemap.Extras.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788120830, "dur":11058, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788120827, "dur":11065, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Animation.Runtime.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788131896, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788132006, "dur":5051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Animation.Runtime.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788137898, "dur":11877, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\PhotonUnityNetworking.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788137895, "dur":11883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788149779, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788149884, "dur":280, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788150168, "dur":5006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788155266, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788155444, "dur":50, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788155507, "dur":4815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityCurlModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788160408, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788160531, "dur":3835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788164438, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.PropertiesModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788164435, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PropertiesModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788164500, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788164723, "dur":3987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PropertiesModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788168796, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.JSONSerializeModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788168793, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.JSONSerializeModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788168862, "dur":207, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788169111, "dur":4792, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.JSONSerializeModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788173964, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CoreModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788174016, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788174141, "dur":6545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CoreModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1734152788180762, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788180842, "dur":8679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788189646, "dur":6569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788196287, "dur":642, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788197005, "dur":4919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788201983, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788202071, "dur":6836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788208961, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788209062, "dur":337, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788209403, "dur":11746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788221202, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788230175, "dur":77, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788221346, "dur":8920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788230340, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788230413, "dur":12031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788242492, "dur":1324, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788243876, "dur":8001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788253848, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788254054, "dur":22750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788276858, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788293581, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788276959, "dur":16688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1734152788293725, "dur":712, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1734152788294459, "dur":16800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":9, "ts":1734152788311340, "dur":48801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":9, "ts":1734152788360255, "dur":233673, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788074707, "dur":4992, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788079700, "dur":556, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788080257, "dur":8425, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788088688, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1734152788098006, "dur":1187, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1734152788099263, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1734152788099394, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788100331, "dur":1000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1734152788101962, "dur":1547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Photon3Unity3D.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788103591, "dur":34244, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788103586, "dur":34253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Mathematics.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788137841, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788138107, "dur":9333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Mathematics.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788147707, "dur":68, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.VideoModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788147704, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VideoModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788147901, "dur":1777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VideoModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788149779, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.VFXModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788149776, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VFXModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788149841, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788149955, "dur":319, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788150278, "dur":4305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VFXModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788154640, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UnityTestProtocolModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788154638, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788154693, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788154823, "dur":3925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788158944, "dur":94, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UIElementsModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788158941, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIElementsModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788159042, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788159143, "dur":4900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIElementsModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788164111, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.ScreenCaptureModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788164108, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ScreenCaptureModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788164169, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788164302, "dur":4942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ScreenCaptureModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788169301, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputLegacyModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788169417, "dur":4907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputLegacyModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788174425, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.ContentLoadModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788174423, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ContentLoadModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788174479, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788174593, "dur":5461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ContentLoadModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1734152788180401, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788180525, "dur":10374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788190972, "dur":250, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788191262, "dur":2679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788194006, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788200312, "dur":76, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788194116, "dur":6287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788200481, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788200591, "dur":5122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788205794, "dur":194, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788206009, "dur":5484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788211558, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788211660, "dur":16143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788227905, "dur":2041, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788229954, "dur":922, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788230894, "dur":10870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788241819, "dur":263, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788242111, "dur":8537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788250721, "dur":371, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788251167, "dur":9998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788261221, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788261332, "dur":6651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788268153, "dur":9015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788277222, "dur":1934, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788307517, "dur":75, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1734152788279186, "dur":28427, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1734152788307743, "dur":8361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/level1" }}
+,{ "pid":12345, "tid":10, "ts":1734152788316188, "dur":277732, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788074769, "dur":4923, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788079693, "dur":1016, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788080709, "dur":7967, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788088705, "dur":130, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":11, "ts":1734152788088682, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":11, "ts":1734152788098576, "dur":191, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788100570, "dur":67, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788099236, "dur":1417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":11, "ts":1734152788100733, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":11, "ts":1734152788100732, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan.exe" }}
+,{ "pid":12345, "tid":11, "ts":1734152788100848, "dur":2063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan.exe" }}
+,{ "pid":12345, "tid":11, "ts":1734152788102965, "dur":17996, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788102963, "dur":18000, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788120964, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788121085, "dur":2269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788123416, "dur":12042, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788123411, "dur":12052, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788135465, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788135564, "dur":2719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788138321, "dur":372, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788138319, "dur":377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788138698, "dur":434, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788139186, "dur":4592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788143854, "dur":11043, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788143853, "dur":11064, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788154918, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788155026, "dur":4013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788159143, "dur":106, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.TextRenderingModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788159140, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextRenderingModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788159251, "dur":193, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788159470, "dur":3623, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextRenderingModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788163229, "dur":83, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.SpriteShapeModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788163226, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteShapeModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788163315, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788163407, "dur":3509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteShapeModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788167046, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.NVIDIAModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788167043, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.NVIDIAModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788167137, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788167376, "dur":4285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.NVIDIAModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788171759, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788171941, "dur":4578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GIModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788176607, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.AudioModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788176604, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AudioModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788176666, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788176795, "dur":5310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AudioModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1734152788182183, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788182314, "dur":9847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788192227, "dur":331, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788192587, "dur":5722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788198416, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788198591, "dur":4380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788206580, "dur":275, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788203144, "dur":3731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788206980, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788217216, "dur":90, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788207097, "dur":10226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788217434, "dur":347, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788217862, "dur":11924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788229865, "dur":151, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788230039, "dur":10985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788241142, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788250338, "dur":58, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788241287, "dur":9121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788250477, "dur":613, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788251153, "dur":10369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788261584, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788261680, "dur":11592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788273393, "dur":12099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788285547, "dur":166, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_development_mono\\WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788285545, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788292154, "dur":103, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788285766, "dur":6511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1734152788292365, "dur":1681, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788311148, "dur":54, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788294071, "dur":17158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":11, "ts":1734152788337978, "dur":111, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1734152788311397, "dur":26747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":11, "ts":1734152788338228, "dur":255691, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788074797, "dur":4885, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788079683, "dur":876, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788080560, "dur":8131, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788088698, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1734152788112677, "dur":2519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1734152788115310, "dur":14425, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788115306, "dur":14433, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788129742, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788129824, "dur":77, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788129908, "dur":3041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788133014, "dur":15769, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\GitHub\\GameJaringan\\ProjectGJ\\GameJaringan\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788133010, "dur":15785, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.PixelPerfect.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788148796, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788148867, "dur":5512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.PixelPerfect.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788154459, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UnityWebRequestAssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788154457, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788154527, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788154644, "dur":3187, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788157901, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UnityAnalyticsCommonModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788157897, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788157993, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788158138, "dur":3236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788161448, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.SubsystemsModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788161445, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubsystemsModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788161510, "dur":151, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788161678, "dur":4560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubsystemsModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788166291, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.PerformanceReportingModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788166288, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PerformanceReportingModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788166344, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788167475, "dur":57, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788167536, "dur":4977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PerformanceReportingModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788172607, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.32f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.DirectorModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788172604, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DirectorModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788172683, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788172815, "dur":6636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DirectorModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788183749, "dur":82, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788179613, "dur":4237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ARModule.pdb" }}
+,{ "pid":12345, "tid":12, "ts":1734152788183979, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788184366, "dur":10080, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788194661, "dur":354, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788195042, "dur":4430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788199528, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788199666, "dur":5556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788205297, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788205442, "dur":6610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Demos.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788212094, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788212228, "dur":12961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788225408, "dur":249, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788225687, "dur":6139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788231954, "dur":441, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788232810, "dur":13791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788246654, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788246889, "dur":7389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788254341, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788254590, "dur":13774, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788268433, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1734152788268556, "dur":16591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1734152788285725, "dur":9153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":12, "ts":1734152788296427, "dur":3477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":12, "ts":1734152788300007, "dur":43608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GitHub/Debug Game Jaringan/GameJaringan_Data/resources.assets" }}
+,{ "pid":12345, "tid":12, "ts":1734152788343911, "dur":250037, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1734152788603346, "dur":3886, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

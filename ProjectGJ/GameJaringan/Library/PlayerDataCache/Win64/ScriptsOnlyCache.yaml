@@ -72,8 +72,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -127,12 +129,6 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnStartGameButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: ManajerJaringan
-    methodName: OnJoinedRoom
-  - assembly: Assembly-CSharp
-    fullTypeName: ManajerJaringan
     methodName: ActivatePanel
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
@@ -143,9 +139,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnRoomCreateButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: ManajerJaringan
-    methodName: OnConnectedToMaster
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -160,13 +153,16 @@ ScriptsOnlyBuild:
     methodName: ActivatePanel
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
+    methodName: OnStartGameButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
     methodName: OnStartSoloGameButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnStartGameButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnJoinRoomByNameClicked
+    methodName: ActivatePanel
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -340,7 +336,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 24804}
     - Class: 114
-      Script: {instanceID: 33318}
+      Script: {instanceID: 27076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -459,7 +455,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 25390}
     - Class: 114
-      Script: {instanceID: 33318}
+      Script: {instanceID: 27076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
