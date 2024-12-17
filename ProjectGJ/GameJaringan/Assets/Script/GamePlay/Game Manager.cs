@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private bool isPanelSettingActive = false;
 
     [Header("Gameplay Settings")]
-    public float gameDuration = 60f; // Durasi permainan dalam detik (60 detik)
+    public float gameDuration = 60f; // Durasi permainan dalam detik (120 detik)
     private float remainingTime; // Waktu tersisa
     private bool isGameRunning = true; // Apakah permainan masih berjalan
     public float moveSpeed = 5f; // Kecepatan pergerakan pemain
@@ -53,16 +53,10 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             playerCharacter = redShirtCharacter;
-            virtualCameraRed.Follow = playerCharacter.transform;
-            virtualCameraRed.enabled = true;
-            virtualCameraBlue.enabled = false;
         }
         else
         {
             playerCharacter = blueShirtCharacter;
-            virtualCameraBlue.Follow = playerCharacter.transform;
-            virtualCameraBlue.enabled = true;
-            virtualCameraRed.enabled = false;
         }
 
         // Setup komponen pemain
@@ -70,6 +64,35 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             rb = playerCharacter.GetComponent<Rigidbody2D>();
             animator = playerCharacter.GetComponent<Animator>();
+
+            // Atur kamera untuk mengikuti karakter pemain
+            if (PhotonNetwork.IsMasterClient)
+            {
+                virtualCameraRed.Follow = playerCharacter.transform;
+                virtualCameraRed.enabled = true;
+                virtualCameraBlue.enabled = false;
+
+                // Atur waktu mulai game
+                remainingTime = gameDuration;
+                photonView.RPC("SyncGameStartTime", RpcTarget.Others, gameDuration);
+            }
+            else
+            {
+                virtualCameraBlue.Follow = playerCharacter.transform;
+                virtualCameraBlue.enabled = true;
+                virtualCameraRed.enabled = false;
+            }
+        }
+        else
+        {
+            Debug.LogError("Player Character is not assigned!");
+        }
+
+        // Set volume awal
+        if (backgroundMusic != null)
+        {
+            musicVolumeSlider.value = backgroundMusic.volume;
+            musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
         }
 
         // Status "U" langsung aktif pada karakter baju merah
@@ -79,14 +102,15 @@ public class GameManager : MonoBehaviourPunCallbacks
             SetStatusU(redShirtCharacter, true);  // Aktifkan status "U" pada karakter baju merah
             SetStatusU(blueShirtCharacter, false); // Nonaktifkan status "U" pada karakter baju biru
         }
+        else
+        {
+            Debug.LogError("Characters are not properly assigned!");
+        }
 
         // Pastikan panel setting tidak aktif di awal
         panelSetting.SetActive(false);
         losePanel.SetActive(false);
         winnerPanel.SetActive(false);
-
-        // Set waktu mulai
-        remainingTime = gameDuration;
     }
 
     void Update()
@@ -120,7 +144,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             ToggleSettingPanel();
         }
 
-        // Status U mengikuti posisi karakter yang berjaga
+        // Pastikan Status U mengikuti posisi karakter yang berjaga
         if (currentPlayerWithStatusU != null)
         {
             Transform statusUTransform = currentPlayerWithStatusU.transform.Find("StatusU");
@@ -133,19 +157,11 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     private void HandleMovement()
     {
-        if (playerCharacter != null)
+        if (photonView.IsMine && playerCharacter != null)
         {
-            // Mengambil input untuk pergerakan
-            if (playerCharacter == redShirtCharacter) // Pemain pertama (Red Shirt)
-            {
-                movement.x = Input.GetAxisRaw("Horizontal");
-                movement.y = Input.GetAxisRaw("Vertical");
-            }
-            else if (playerCharacter == blueShirtCharacter) // Pemain kedua (Blue Shirt)
-            {
-                movement.x = Input.GetAxisRaw("Horizontal2"); // Gunakan axis custom (Horizontal2) untuk pemain kedua
-                movement.y = Input.GetAxisRaw("Vertical2");   // Gunakan axis custom (Vertical2) untuk pemain kedua
-            }
+            // Mengambil input W, A, S, D
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
 
             // Normalisasi gerakan agar tidak lebih dari 1 saat diagonal
             movement = movement.normalized;
@@ -160,7 +176,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             // Animasi pergerakan
             if (animator != null)
             {
-                animator.SetFloat("Speed", movement.magnitude); // Mengatur animasi kecepatan
+                animator.SetFloat("Speed", movement.magnitude);
             }
 
             // Flip karakter jika berubah arah horizontal (hanya pada sumbu X)
@@ -177,6 +193,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             rb.velocity = movement * currentSpeed;
         }
     }
+
 
     private void Flip()
     {
@@ -200,36 +217,40 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (gameEnded) return;
 
         // Jika pemain dengan status "U" bertabrakan dengan pemain lain
-        if (other.gameObject == currentPlayerWithStatusU)
+        if (collision.gameObject != null && collision.gameObject != currentPlayerWithStatusU)
         {
-            GameObject otherPlayer = other.gameObject == redShirtCharacter ? blueShirtCharacter : redShirtCharacter;
+            GameObject otherPlayer = collision.gameObject;
 
-            // Pastikan pemain lain valid
-            if (otherPlayer != null)
+            // Pastikan pemain lain adalah karakter valid
+            if (otherPlayer == redShirtCharacter || otherPlayer == blueShirtCharacter)
             {
-                // Pindahkan status "U" ke pemain lain
-                TransferStatusU(otherPlayer);
+                // Transfer status "U" dan sinkronisasi ke pemain lain
+                photonView.RPC("TransferStatusURPC", RpcTarget.All, otherPlayer == redShirtCharacter ? "Red" : "Blue");
             }
         }
     }
 
-    void TransferStatusU(GameObject newPlayer)
+    [PunRPC]
+    void TransferStatusURPC(string newPlayerName)
     {
-        if (newPlayer == null || currentPlayerWithStatusU == null)
-            return;
+        GameObject newPlayer = newPlayerName == "Red" ? redShirtCharacter : blueShirtCharacter;
 
-        // Nonaktifkan status "U" dari pemain saat ini
-        SetStatusU(currentPlayerWithStatusU, false);
+        if (newPlayer != null && currentPlayerWithStatusU != null)
+        {
+            // Nonaktifkan status "U" dari pemain saat ini
+            SetStatusU(currentPlayerWithStatusU, false);
 
-        // Aktifkan status "U" untuk pemain baru
-        currentPlayerWithStatusU = newPlayer;
-        SetStatusU(currentPlayerWithStatusU, true);
+            // Aktifkan status "U" untuk pemain baru
+            currentPlayerWithStatusU = newPlayer;
+            SetStatusU(currentPlayerWithStatusU, true);
+        }
     }
+
 
     public void EndGame()
     {

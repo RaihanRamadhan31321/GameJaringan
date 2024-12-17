@@ -411,7 +411,7 @@
 "Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Script/ExitGame.cs"
-"Assets/Script/GameManager.cs"
+"Assets/Script/GamePlay/Game Manager.cs"
 "Assets/Script/LoadScene.cs"
 "Assets/Script/script.cs"
 "Assets/Script/SinglePlayers.cs"

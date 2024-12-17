@@ -49,6 +49,11 @@ MonoBehaviour:
   - AssignStatusU
   - TransferStatusU_RPC
   - SyncRemainingTime
+  - AssignRandomStatusU
+  - SyncStatusU
+  - TransferStatusU
+  - ShowEndGameResults
+  - TransferStatusURPC
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4552977151248248055}
   - component: {fileID: 8653297764986366284}
   - component: {fileID: 274093202861126828}
-  - component: {fileID: 4078518724905137112}
   - component: {fileID: 3615635383027143748}
   - component: {fileID: 305380202647519169}
   m_Layer: 0
@@ -202,26 +201,6 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &4078518724905137112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2352457695407448713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9cbd9420ba317b4981986e681a63019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  redShirtCharacter: {fileID: 2352457695407448713}
-  blueShirtCharacter: {fileID: 0}
-  virtualCameraRed: {fileID: 22807979861725629}
-  virtualCameraBlue: {fileID: 0}
-  panelSetting: {fileID: 0}
-  musicVolumeSlider: {fileID: 0}
-  backgroundMusic: {fileID: 0}
-  gameStartTime: 120
 --- !u!114 &3615635383027143748
 MonoBehaviour:
   m_ObjectHideFlags: 0
