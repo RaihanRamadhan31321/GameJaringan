@@ -1272,7 +1272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &535305018
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3857,7 +3857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6047070204024962438, guid: 8398cd9f03503944aaa6eb820acefc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -5385,7 +5385,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 184634518}
         m_TargetAssemblyTypeName: ManajerJaringan, Assembly-CSharp
-        m_MethodName: OnStartGameButtonClicked
+        m_MethodName: OnJoinRoomByNameClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 184634518}
+        m_TargetAssemblyTypeName: ManajerJaringan, Assembly-CSharp
+        m_MethodName: OnConnectedToMaster
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

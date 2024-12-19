@@ -209,13 +209,43 @@ public class GameManager : MonoBehaviourPunCallbacks
         Transform statusUTransform = player.transform.Find("StatusU");
         if (statusUTransform != null)
         {
-            statusUTransform.gameObject.SetActive(isActive);
+            GameObject statusUObject = statusUTransform.gameObject;
+
+            // Aktifkan atau nonaktifkan StatusU
+            statusUObject.SetActive(isActive);
+
+            // Sinkronisasi komponen PhotonView
+            PhotonView photonView = statusUObject.GetComponent<PhotonView>();
+            if (photonView == null)
+            {
+                photonView = statusUObject.AddComponent<PhotonView>();
+            }
+
+            // Tambahkan PhotonTransformView jika belum ada
+            PhotonTransformView transformView = statusUObject.GetComponent<PhotonTransformView>();
+            if (transformView == null)
+            {
+                transformView = statusUObject.AddComponent<PhotonTransformView>();
+                photonView.ObservedComponents.Add(transformView);
+
+                // Konfigurasi transform view untuk sinkronisasi
+                transformView.m_SynchronizePosition = true;
+                transformView.m_SynchronizeRotation = true;
+                transformView.m_SynchronizeScale = false;
+            }
+
+            // Pastikan PhotonView mengatur Ownership ke pemain yang relevan
+            if (isActive && photonView.IsMine == false)
+            {
+                photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
+            }
         }
         else
         {
             Debug.LogError($"Player {player.name} does not have a 'StatusU' child object!");
         }
     }
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -248,9 +278,15 @@ public class GameManager : MonoBehaviourPunCallbacks
             // Aktifkan status "U" untuk pemain baru
             currentPlayerWithStatusU = newPlayer;
             SetStatusU(currentPlayerWithStatusU, true);
+
+            // Pindahkan ownership PhotonView ke pemain baru
+            PhotonView photonView = currentPlayerWithStatusU.transform.Find("StatusU").GetComponent<PhotonView>();
+            if (photonView != null && photonView.IsMine == false)
+            {
+                photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
+            }
         }
     }
-
 
     public void EndGame()
     {

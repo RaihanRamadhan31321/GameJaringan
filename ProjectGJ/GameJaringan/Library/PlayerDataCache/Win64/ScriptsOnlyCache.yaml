@@ -34,6 +34,7 @@ ScriptsOnlyBuild:
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.dll:
+    - Photon.Pun.PhotonRigidbody2DView
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
@@ -68,10 +69,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -155,7 +154,7 @@ ScriptsOnlyBuild:
     methodName: OnStartSoloGameButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
-    methodName: OnStartGameButtonClicked
+    methodName: OnJoinRoomByNameClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -314,6 +313,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18210}
     - Class: 114
+      Script: {instanceID: 18238}
+    - Class: 114
       Script: {instanceID: 18396}
     - Class: 114
       Script: {instanceID: 18454}
@@ -321,6 +322,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 18666}
     - Class: 114
       Script: {instanceID: 19318}
+    - Class: 114
+      Script: {instanceID: 19364}
     - Class: 114
       Script: {instanceID: 20490}
     - Class: 114
@@ -337,8 +340,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 24352}
     - Class: 114
       Script: {instanceID: 24804}
-    - Class: 114
-      Script: {instanceID: 42830}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -417,13 +418,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18666}
     - Class: 114
-      Script: {instanceID: 19744}
+      Script: {instanceID: 19746}
     - Class: 114
-      Script: {instanceID: 19748}
+      Script: {instanceID: 19750}
     - Class: 114
-      Script: {instanceID: 19940}
-    - Class: 114
-      Script: {instanceID: 19968}
+      Script: {instanceID: 19942}
     - Class: 114
       Script: {instanceID: 20490}
     - Class: 114
@@ -457,7 +456,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 25390}
     - Class: 114
-      Script: {instanceID: 31114}
+      Script: {instanceID: 33452}
+    - Class: 114
+      Script: {instanceID: 33458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1145,6 +1146,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: Photon.Chat.UtilityScripts
     className: EventSystemSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: b5c411436faa3c046b565d13adbd3510
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: b2d2a01a2a85d9ed12e80cb33a9a6044
@@ -2609,12 +2616,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: b5c411436faa3c046b565d13adbd3510
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginLobby.unity
