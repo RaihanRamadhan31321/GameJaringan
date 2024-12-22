@@ -27,8 +27,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Demos.dll:
-    - Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
     PhotonUnityNetworking.Utilities:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.Utilities.dll:
@@ -155,6 +153,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnJoinRoomByNameClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnStartSoloGameButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -406,8 +407,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16786}
     - Class: 114
-      Script: {instanceID: 16882}
-    - Class: 114
       Script: {instanceID: 17002}
     - Class: 114
       Script: {instanceID: 18120}
@@ -456,9 +455,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 25390}
     - Class: 114
-      Script: {instanceID: 33452}
+      Script: {instanceID: 31532}
     - Class: 114
-      Script: {instanceID: 33458}
+      Script: {instanceID: 31538}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

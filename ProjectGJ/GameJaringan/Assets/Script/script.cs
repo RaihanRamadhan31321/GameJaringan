@@ -240,10 +240,6 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
             Debug.Log("Master Client memulai permainan. Memuat scene GamePlay...");
             PhotonNetwork.LoadLevel("GamePlay");
         }
-        else
-        {
-            Debug.LogWarning("Hanya Master Client yang dapat memulai permainan!");
-        }
     }
 
     public override void OnCreatedRoom()

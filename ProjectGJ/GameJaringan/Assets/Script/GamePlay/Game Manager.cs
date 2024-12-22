@@ -53,10 +53,12 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             playerCharacter = redShirtCharacter;
+            photonView.TransferOwnership(PhotonNetwork.LocalPlayer); // Transfer ownership
         }
         else
         {
             playerCharacter = blueShirtCharacter;
+            photonView.TransferOwnership(PhotonNetwork.LocalPlayer); // Transfer ownership
         }
 
         // Setup komponen pemain
@@ -86,6 +88,12 @@ public class GameManager : MonoBehaviourPunCallbacks
         else
         {
             Debug.LogError("Player Character is not assigned!");
+        }
+
+        // Tambahan sinkronisasi ownership
+        if (!PhotonNetwork.IsMasterClient && playerCharacter == blueShirtCharacter)
+        {
+            photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
         }
 
         // Set volume awal
