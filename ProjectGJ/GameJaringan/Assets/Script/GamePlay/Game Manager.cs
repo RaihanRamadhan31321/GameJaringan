@@ -1,3 +1,4 @@
+// Tambahkan library jika perlu
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
@@ -246,12 +247,17 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
+<<<<<<< HEAD:ProjectGJ/GameJaringan/Assets/Script/GamePlay/Game Manager.cs
 
     void OnTriggerEnter2D(Collider2D collision)
+=======
+    void OnCollisionEnter2D(Collision2D collision)
+>>>>>>> parent of d94e7d1f (update):ProjectGJ/GameJaringan/Assets/Script/GameManager.cs
     {
         if (gameEnded) return;
 
         // Jika pemain dengan status "U" bertabrakan dengan pemain lain
+<<<<<<< HEAD:ProjectGJ/GameJaringan/Assets/Script/GamePlay/Game Manager.cs
         if (collision.gameObject != null && collision.gameObject != currentPlayerWithStatusU)
         {
             GameObject otherPlayer = collision.gameObject;
@@ -262,6 +268,18 @@ public class GameManager : MonoBehaviourPunCallbacks
                 // Transfer status "U" dan sinkronisasi ke pemain lain
                 photonView.RPC("TransferStatusURPC", RpcTarget.All, otherPlayer == redShirtCharacter ? "Red" : "Blue");
             }
+=======
+        if (collision.gameObject == currentPlayerWithStatusU)
+        {
+            GameObject otherPlayer = collision.otherCollider.gameObject;
+
+            // Pastikan pemain lain valid
+            if (otherPlayer != redShirtCharacter && otherPlayer != blueShirtCharacter)
+                return;
+
+            // Pindahkan status "U" ke pemain lain
+            TransferStatusU(otherPlayer);
+>>>>>>> parent of d94e7d1f (update):ProjectGJ/GameJaringan/Assets/Script/GameManager.cs
         }
     }
 

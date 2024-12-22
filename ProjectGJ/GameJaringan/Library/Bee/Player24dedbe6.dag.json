@@ -263,10 +263,14 @@
         255,
         256,
         257,
+<<<<<<< HEAD
         258,
         259,
         260,
         261
+=======
+        258
+>>>>>>> parent of a7fc88f0 (update)
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -480,7 +484,11 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
+<<<<<<< HEAD
       "PayloadLength": 18257,
+=======
+      "PayloadLength": 18090,
+>>>>>>> parent of a7fc88f0 (update)
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -582,7 +590,6 @@
         "C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
-        "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/PhotonChat.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.dll",
@@ -1534,6 +1541,7 @@
       "DebugActionIndex": 90
     },
     {
+<<<<<<< HEAD
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.AI.Navigation.dll",
       "DisplayName": "Copying Unity.AI.Navigation.dll",
       "ActionType": "CopyFiles",
@@ -1546,6 +1554,8 @@
       "DebugActionIndex": 91
     },
     {
+=======
+>>>>>>> parent of a7fc88f0 (update)
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Flow.dll",
       "DisplayName": "Copying Unity.VisualScripting.Flow.dll",
       "ActionType": "CopyFiles",
@@ -1555,7 +1565,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Flow.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 92
+=======
+      "DebugActionIndex": 90
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonChat.dll",
@@ -1567,7 +1581,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonChat.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 93
+=======
+      "DebugActionIndex": 91
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.dll",
@@ -1579,7 +1597,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 94
+=======
+      "DebugActionIndex": 92
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.dll",
@@ -1591,7 +1613,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 95
+=======
+      "DebugActionIndex": 93
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.SpriteShape.Runtime.dll",
@@ -1603,7 +1629,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.SpriteShape.Runtime.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 96
+=======
+      "DebugActionIndex": 94
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.PixelPerfect.dll",
@@ -1615,7 +1645,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.PixelPerfect.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 97
+=======
+      "DebugActionIndex": 95
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Demos.dll",
@@ -1627,7 +1661,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Demos.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 98
+=======
+      "DebugActionIndex": 96
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Utilities.dll",
@@ -1639,7 +1677,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Utilities.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 99
+=======
+      "DebugActionIndex": 97
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.dll",
@@ -1651,7 +1693,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 100
+=======
+      "DebugActionIndex": 98
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -1663,7 +1709,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Core.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 101
+=======
+      "DebugActionIndex": 99
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Animation.Runtime.dll",
@@ -1675,7 +1725,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Animation.Runtime.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 102
+=======
+      "DebugActionIndex": 100
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Tilemap.Extras.dll",
@@ -1687,7 +1741,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Tilemap.Extras.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 103
+=======
+      "DebugActionIndex": 101
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UI.dll",
@@ -1699,7 +1757,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UI.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 104
+=======
+      "DebugActionIndex": 102
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.InternalAPIEngineBridge.001.dll",
@@ -1711,7 +1773,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.InternalAPIEngineBridge.001.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 105
+=======
+      "DebugActionIndex": 103
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonRealtime.dll",
@@ -1723,7 +1789,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonRealtime.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 106
+=======
+      "DebugActionIndex": 104
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Common.Runtime.dll",
@@ -1735,7 +1805,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Common.Runtime.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 107
+=======
+      "DebugActionIndex": 105
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Timeline.dll",
@@ -1747,7 +1821,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Timeline.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 108
+=======
+      "DebugActionIndex": 106
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Mathematics.dll",
@@ -1759,7 +1837,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Mathematics.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 109
+=======
+      "DebugActionIndex": 107
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.State.dll",
@@ -1771,7 +1853,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.State.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 110
+=======
+      "DebugActionIndex": 108
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Cinemachine.dll",
@@ -1783,7 +1869,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Cinemachine.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 111
+=======
+      "DebugActionIndex": 109
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll",
@@ -1795,7 +1885,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 112
+=======
+      "DebugActionIndex": 110
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/websocket-sharp.dll",
@@ -1807,7 +1901,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/websocket-sharp.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 113
+=======
+      "DebugActionIndex": 111
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -1819,7 +1917,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 114
+=======
+      "DebugActionIndex": 112
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Photon3Unity3D.dll",
@@ -1831,7 +1933,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Photon3Unity3D.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 115
+=======
+      "DebugActionIndex": 113
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.Unsafe.dll",
@@ -1843,7 +1949,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.Unsafe.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 116
+=======
+      "DebugActionIndex": 114
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Runtime.dll",
@@ -1855,7 +1965,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Runtime.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 117
+=======
+      "DebugActionIndex": 115
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/netstandard.dll",
@@ -1867,7 +1981,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/netstandard.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 118
+=======
+      "DebugActionIndex": 116
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Mono.Security.dll",
@@ -1879,7 +1997,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Mono.Security.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 119
+=======
+      "DebugActionIndex": 117
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.ComponentModel.Composition.dll",
@@ -1891,7 +2013,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.ComponentModel.Composition.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 120
+=======
+      "DebugActionIndex": 118
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Configuration.dll",
@@ -1903,7 +2029,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Configuration.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 121
+=======
+      "DebugActionIndex": 119
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Core.dll",
@@ -1915,7 +2045,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Core.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 122
+=======
+      "DebugActionIndex": 120
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -1927,7 +2061,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 123
+=======
+      "DebugActionIndex": 121
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Data.dll",
@@ -1939,7 +2077,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Data.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 124
+=======
+      "DebugActionIndex": 122
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Drawing.dll",
@@ -1951,7 +2093,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Drawing.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 125
+=======
+      "DebugActionIndex": 123
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.EnterpriseServices.dll",
@@ -1963,7 +2109,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.EnterpriseServices.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 126
+=======
+      "DebugActionIndex": 124
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -1975,7 +2125,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 127
+=======
+      "DebugActionIndex": 125
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.IO.Compression.dll",
@@ -1987,7 +2141,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.IO.Compression.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 128
+=======
+      "DebugActionIndex": 126
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Net.Http.dll",
@@ -1999,7 +2157,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Net.Http.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 129
+=======
+      "DebugActionIndex": 127
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Numerics.dll",
@@ -2011,7 +2173,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Numerics.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 130
+=======
+      "DebugActionIndex": 128
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Runtime.Serialization.dll",
@@ -2023,7 +2189,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Runtime.Serialization.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 131
+=======
+      "DebugActionIndex": 129
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Security.dll",
@@ -2035,7 +2205,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Security.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 132
+=======
+      "DebugActionIndex": 130
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.ServiceModel.Internals.dll",
@@ -2047,7 +2221,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.ServiceModel.Internals.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 133
+=======
+      "DebugActionIndex": 131
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Transactions.dll",
@@ -2059,7 +2237,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Transactions.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 134
+=======
+      "DebugActionIndex": 132
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Xml.Linq.dll",
@@ -2071,7 +2253,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Xml.Linq.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 135
+=======
+      "DebugActionIndex": 133
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Xml.dll",
@@ -2083,7 +2269,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.Xml.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 136
+=======
+      "DebugActionIndex": 134
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.dll",
@@ -2095,7 +2285,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/System.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 137
+=======
+      "DebugActionIndex": 135
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/mscorlib.dll",
@@ -2107,7 +2301,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/mscorlib.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 138
+=======
+      "DebugActionIndex": 136
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AIModule.pdb",
@@ -2119,7 +2317,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AIModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 139
+=======
+      "DebugActionIndex": 137
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ARModule.pdb",
@@ -2131,7 +2333,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ARModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 140
+=======
+      "DebugActionIndex": 138
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AccessibilityModule.pdb",
@@ -2143,7 +2349,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AccessibilityModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 141
+=======
+      "DebugActionIndex": 139
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AndroidJNIModule.pdb",
@@ -2155,7 +2365,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AndroidJNIModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 142
+=======
+      "DebugActionIndex": 140
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AnimationModule.pdb",
@@ -2167,7 +2381,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AnimationModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 143
+=======
+      "DebugActionIndex": 141
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AssetBundleModule.pdb",
@@ -2179,7 +2397,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AssetBundleModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 144
+=======
+      "DebugActionIndex": 142
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AudioModule.pdb",
@@ -2191,7 +2413,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.AudioModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 145
+=======
+      "DebugActionIndex": 143
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClothModule.pdb",
@@ -2203,7 +2429,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClothModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 146
+=======
+      "DebugActionIndex": 144
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterInputModule.pdb",
@@ -2215,7 +2445,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterInputModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 147
+=======
+      "DebugActionIndex": 145
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterRendererModule.pdb",
@@ -2227,7 +2461,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ClusterRendererModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 148
+=======
+      "DebugActionIndex": 146
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ContentLoadModule.pdb",
@@ -2239,7 +2477,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ContentLoadModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 149
+=======
+      "DebugActionIndex": 147
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CoreModule.pdb",
@@ -2251,7 +2493,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CoreModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 150
+=======
+      "DebugActionIndex": 148
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CrashReportingModule.pdb",
@@ -2263,7 +2509,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.CrashReportingModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 151
+=======
+      "DebugActionIndex": 149
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DSPGraphModule.pdb",
@@ -2275,7 +2525,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DSPGraphModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 152
+=======
+      "DebugActionIndex": 150
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DirectorModule.pdb",
@@ -2287,7 +2541,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.DirectorModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 153
+=======
+      "DebugActionIndex": 151
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GIModule.pdb",
@@ -2299,7 +2557,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GIModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 154
+=======
+      "DebugActionIndex": 152
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GameCenterModule.pdb",
@@ -2311,7 +2573,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GameCenterModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 155
+=======
+      "DebugActionIndex": 153
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GridModule.pdb",
@@ -2323,7 +2589,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.GridModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 156
+=======
+      "DebugActionIndex": 154
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.HotReloadModule.pdb",
@@ -2335,7 +2605,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.HotReloadModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 157
+=======
+      "DebugActionIndex": 155
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.IMGUIModule.pdb",
@@ -2347,7 +2621,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.IMGUIModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 158
+=======
+      "DebugActionIndex": 156
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ImageConversionModule.pdb",
@@ -2359,7 +2637,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ImageConversionModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 159
+=======
+      "DebugActionIndex": 157
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputLegacyModule.pdb",
@@ -2371,7 +2653,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputLegacyModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 160
+=======
+      "DebugActionIndex": 158
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputModule.pdb",
@@ -2383,7 +2669,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.InputModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 161
+=======
+      "DebugActionIndex": 159
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.JSONSerializeModule.pdb",
@@ -2395,7 +2685,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.JSONSerializeModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 162
+=======
+      "DebugActionIndex": 160
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.LocalizationModule.pdb",
@@ -2407,7 +2701,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.LocalizationModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 163
+=======
+      "DebugActionIndex": 161
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.NVIDIAModule.pdb",
@@ -2419,7 +2717,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.NVIDIAModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 164
+=======
+      "DebugActionIndex": 162
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ParticleSystemModule.pdb",
@@ -2431,7 +2733,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ParticleSystemModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 165
+=======
+      "DebugActionIndex": 163
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PerformanceReportingModule.pdb",
@@ -2443,7 +2749,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PerformanceReportingModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 166
+=======
+      "DebugActionIndex": 164
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.Physics2DModule.pdb",
@@ -2455,7 +2765,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.Physics2DModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 167
+=======
+      "DebugActionIndex": 165
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PhysicsModule.pdb",
@@ -2467,7 +2781,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PhysicsModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 168
+=======
+      "DebugActionIndex": 166
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ProfilerModule.pdb",
@@ -2479,7 +2797,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ProfilerModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 169
+=======
+      "DebugActionIndex": 167
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PropertiesModule.pdb",
@@ -2491,7 +2813,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.PropertiesModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 170
+=======
+      "DebugActionIndex": 168
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb",
@@ -2503,7 +2829,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 171
+=======
+      "DebugActionIndex": 169
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ScreenCaptureModule.pdb",
@@ -2515,7 +2845,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.ScreenCaptureModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 172
+=======
+      "DebugActionIndex": 170
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SharedInternalsModule.pdb",
@@ -2527,7 +2861,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SharedInternalsModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 173
+=======
+      "DebugActionIndex": 171
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteMaskModule.pdb",
@@ -2539,7 +2877,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteMaskModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 174
+=======
+      "DebugActionIndex": 172
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteShapeModule.pdb",
@@ -2551,7 +2893,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SpriteShapeModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 175
+=======
+      "DebugActionIndex": 173
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.StreamingModule.pdb",
@@ -2563,7 +2909,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.StreamingModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 176
+=======
+      "DebugActionIndex": 174
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubstanceModule.pdb",
@@ -2575,7 +2925,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubstanceModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 177
+=======
+      "DebugActionIndex": 175
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubsystemsModule.pdb",
@@ -2587,7 +2941,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.SubsystemsModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 178
+=======
+      "DebugActionIndex": 176
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TLSModule.pdb",
@@ -2599,7 +2957,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TLSModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 179
+=======
+      "DebugActionIndex": 177
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainModule.pdb",
@@ -2611,7 +2973,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 180
+=======
+      "DebugActionIndex": 178
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb",
@@ -2623,7 +2989,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 181
+=======
+      "DebugActionIndex": 179
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
@@ -2635,7 +3005,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 182
+=======
+      "DebugActionIndex": 180
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
@@ -2647,7 +3021,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 183
+=======
+      "DebugActionIndex": 181
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextRenderingModule.pdb",
@@ -2659,7 +3037,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TextRenderingModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 184
+=======
+      "DebugActionIndex": 182
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TilemapModule.pdb",
@@ -2671,7 +3053,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.TilemapModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 185
+=======
+      "DebugActionIndex": 183
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIElementsModule.pdb",
@@ -2683,7 +3069,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIElementsModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 186
+=======
+      "DebugActionIndex": 184
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIModule.pdb",
@@ -2695,7 +3085,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UIModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 187
+=======
+      "DebugActionIndex": 185
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UmbraModule.pdb",
@@ -2707,7 +3101,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UmbraModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 188
+=======
+      "DebugActionIndex": 186
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb",
@@ -2719,7 +3117,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 189
+=======
+      "DebugActionIndex": 187
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb",
@@ -2731,7 +3133,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 190
+=======
+      "DebugActionIndex": 188
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityConnectModule.pdb",
@@ -2743,7 +3149,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityConnectModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 191
+=======
+      "DebugActionIndex": 189
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityCurlModule.pdb",
@@ -2755,7 +3165,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityCurlModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 192
+=======
+      "DebugActionIndex": 190
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb",
@@ -2767,7 +3181,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 193
+=======
+      "DebugActionIndex": 191
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb",
@@ -2779,7 +3197,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 194
+=======
+      "DebugActionIndex": 192
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb",
@@ -2791,7 +3213,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 195
+=======
+      "DebugActionIndex": 193
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestModule.pdb",
@@ -2803,7 +3229,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 196
+=======
+      "DebugActionIndex": 194
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb",
@@ -2815,7 +3245,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 197
+=======
+      "DebugActionIndex": 195
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb",
@@ -2827,7 +3261,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 198
+=======
+      "DebugActionIndex": 196
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VFXModule.pdb",
@@ -2839,7 +3277,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VFXModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 199
+=======
+      "DebugActionIndex": 197
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VRModule.pdb",
@@ -2851,7 +3293,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VRModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 200
+=======
+      "DebugActionIndex": 198
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VehiclesModule.pdb",
@@ -2863,7 +3309,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VehiclesModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 201
+=======
+      "DebugActionIndex": 199
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VideoModule.pdb",
@@ -2875,7 +3325,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VideoModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 202
+=======
+      "DebugActionIndex": 200
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VirtualTexturingModule.pdb",
@@ -2887,7 +3341,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.VirtualTexturingModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 203
+=======
+      "DebugActionIndex": 201
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.WindModule.pdb",
@@ -2899,7 +3357,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.WindModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 204
+=======
+      "DebugActionIndex": 202
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.XRModule.pdb",
@@ -2911,7 +3373,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.XRModule.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 205
+=======
+      "DebugActionIndex": 203
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.pdb",
@@ -2923,7 +3389,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 206
+=======
+      "DebugActionIndex": 204
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Assembly-CSharp.pdb",
@@ -2935,7 +3405,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Assembly-CSharp.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 207
+=======
+      "DebugActionIndex": 205
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.IK.Runtime.pdb",
@@ -2947,6 +3421,7 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.IK.Runtime.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 208
     },
     {
@@ -2960,6 +3435,9 @@
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.AI.Navigation.pdb"
       ],
       "DebugActionIndex": 209
+=======
+      "DebugActionIndex": 206
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Flow.pdb",
@@ -2971,7 +3449,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Flow.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 210
+=======
+      "DebugActionIndex": 207
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonChat.pdb",
@@ -2983,7 +3465,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonChat.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 211
+=======
+      "DebugActionIndex": 208
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.pdb",
@@ -2995,7 +3481,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 212
+=======
+      "DebugActionIndex": 209
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.pdb",
@@ -3007,7 +3497,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Collections.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 213
+=======
+      "DebugActionIndex": 210
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb",
@@ -3019,7 +3513,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 214
+=======
+      "DebugActionIndex": 211
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.PixelPerfect.pdb",
@@ -3031,7 +3529,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.PixelPerfect.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 215
+=======
+      "DebugActionIndex": 212
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Demos.pdb",
@@ -3043,7 +3545,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Demos.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 216
+=======
+      "DebugActionIndex": 213
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Utilities.pdb",
@@ -3055,7 +3561,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonUnityNetworking.Utilities.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 217
+=======
+      "DebugActionIndex": 214
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.pdb",
@@ -3067,7 +3577,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Burst.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 218
+=======
+      "DebugActionIndex": 215
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Core.pdb",
@@ -3079,7 +3593,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.Core.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 219
+=======
+      "DebugActionIndex": 216
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Animation.Runtime.pdb",
@@ -3091,7 +3609,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Animation.Runtime.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 220
+=======
+      "DebugActionIndex": 217
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Tilemap.Extras.pdb",
@@ -3103,7 +3625,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Tilemap.Extras.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 221
+=======
+      "DebugActionIndex": 218
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UI.pdb",
@@ -3115,7 +3641,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/UnityEngine.UI.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 222
+=======
+      "DebugActionIndex": 219
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb",
@@ -3127,7 +3657,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 223
+=======
+      "DebugActionIndex": 220
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonRealtime.pdb",
@@ -3139,7 +3673,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/PhotonRealtime.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 224
+=======
+      "DebugActionIndex": 221
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Common.Runtime.pdb",
@@ -3151,7 +3689,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.2D.Common.Runtime.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 225
+=======
+      "DebugActionIndex": 222
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Timeline.pdb",
@@ -3163,7 +3705,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Timeline.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 226
+=======
+      "DebugActionIndex": 223
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Mathematics.pdb",
@@ -3175,7 +3721,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.Mathematics.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 227
+=======
+      "DebugActionIndex": 224
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.State.pdb",
@@ -3187,7 +3737,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Unity.VisualScripting.State.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 228
+=======
+      "DebugActionIndex": 225
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Cinemachine.pdb",
@@ -3199,7 +3753,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Cinemachine.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 229
+=======
+      "DebugActionIndex": 226
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Photon3Unity3D.pdb",
@@ -3211,14 +3769,23 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Managed/Photon3Unity3D.pdb"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 230
+=======
+      "DebugActionIndex": 227
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker",
       "DisplayName": "Running Burst Compiler",
       "ActionType": "RunRPCCommand",
+<<<<<<< HEAD
       "PayloadOffset": 18463,
       "PayloadLength": 16980,
+=======
+      "PayloadOffset": 18296,
+      "PayloadLength": 16873,
+>>>>>>> parent of a7fc88f0 (update)
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Da",
       "Action": "GenerateNativePluginsForAssemblies",
       "Inputs": [
@@ -3292,7 +3859,6 @@
         "C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
-        "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/PhotonChat.dll",
         "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.dll",
@@ -3374,7 +3940,11 @@
           "Recurse": 1
         }
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 231
+=======
+      "DebugActionIndex": 228
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Plugins/x86_64/lib_burst_generated.dll",
@@ -3387,9 +3957,15 @@
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Plugins/x86_64/lib_burst_generated.dll"
       ],
       "ToBuildDependencies": [
+<<<<<<< HEAD
         231
       ],
       "DebugActionIndex": 232
+=======
+        228
+      ],
+      "DebugActionIndex": 229
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Plugins/x86_64/lib_burst_generated.pdb",
@@ -3402,22 +3978,36 @@
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Plugins/x86_64/lib_burst_generated.pdb"
       ],
       "ToBuildDependencies": [
+<<<<<<< HEAD
         231
       ],
       "DebugActionIndex": 233
+=======
+        228
+      ],
+      "DebugActionIndex": 230
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 35532,
+=======
+      "PayloadOffset": 35258,
+>>>>>>> parent of a7fc88f0 (update)
       "PayloadLength": 27,
       "PayloadDebugContentSnippet": "DefaultCompany\nGameJaringan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 234
+=======
+      "DebugActionIndex": 231
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/app.info",
@@ -3430,9 +4020,15 @@
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/app.info"
       ],
       "ToBuildDependencies": [
+<<<<<<< HEAD
         234
       ],
       "DebugActionIndex": 235
+=======
+        231
+      ],
+      "DebugActionIndex": 232
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Resources/unity default resources",
@@ -3444,7 +4040,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan_Data/Resources/unity default resources"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 236
+=======
+      "DebugActionIndex": 233
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/GameJaringan.exe",
@@ -3456,7 +4056,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/GameJaringan.exe"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 237
+=======
+      "DebugActionIndex": 234
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -3468,7 +4072,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 238
+=======
+      "DebugActionIndex": 235
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -3480,7 +4088,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 239
+=======
+      "DebugActionIndex": 236
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -3492,7 +4104,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 240
+=======
+      "DebugActionIndex": 237
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -3504,7 +4120,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 241
+=======
+      "DebugActionIndex": 238
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -3516,7 +4136,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 242
+=======
+      "DebugActionIndex": 239
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -3528,7 +4152,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 243
+=======
+      "DebugActionIndex": 240
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -3540,7 +4168,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 244
+=======
+      "DebugActionIndex": 241
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -3552,7 +4184,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 245
+=======
+      "DebugActionIndex": 242
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -3564,7 +4200,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 246
+=======
+      "DebugActionIndex": 243
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -3576,7 +4216,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 247
+=======
+      "DebugActionIndex": 244
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -3588,7 +4232,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 248
+=======
+      "DebugActionIndex": 245
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -3600,7 +4248,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 249
+=======
+      "DebugActionIndex": 246
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -3612,7 +4264,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 250
+=======
+      "DebugActionIndex": 247
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -3624,7 +4280,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 251
+=======
+      "DebugActionIndex": 248
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -3636,7 +4296,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 252
+=======
+      "DebugActionIndex": 249
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -3648,7 +4312,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 253
+=======
+      "DebugActionIndex": 250
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -3660,7 +4328,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 254
+=======
+      "DebugActionIndex": 251
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -3672,7 +4344,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 255
+=======
+      "DebugActionIndex": 252
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/config",
@@ -3684,7 +4360,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/config"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 256
+=======
+      "DebugActionIndex": 253
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -3696,7 +4376,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 257
+=======
+      "DebugActionIndex": 254
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/UnityCrashHandler64.exe",
@@ -3708,7 +4392,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/UnityCrashHandler64.exe"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 258
+=======
+      "DebugActionIndex": 255
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/UnityPlayer.dll",
@@ -3720,7 +4408,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/UnityPlayer.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 259
+=======
+      "DebugActionIndex": 256
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "CopyFiles C:/GitHub/Debug Game Jaringan/WinPixEventRuntime.dll",
@@ -3732,7 +4424,11 @@
       "Outputs": [
         "C:/GitHub/Debug Game Jaringan/WinPixEventRuntime.dll"
       ],
+<<<<<<< HEAD
       "DebugActionIndex": 260
+=======
+      "DebugActionIndex": 257
+>>>>>>> parent of a7fc88f0 (update)
     },
     {
       "Annotation": "Player",
@@ -3965,11 +4661,14 @@
         225,
         226,
         227,
-        228,
         229,
         230,
         232,
         233,
+<<<<<<< HEAD
+=======
+        234,
+>>>>>>> parent of a7fc88f0 (update)
         235,
         236,
         237,
@@ -3992,6 +4691,7 @@
         254,
         255,
         256,
+<<<<<<< HEAD
         257,
         258,
         259,
@@ -3999,6 +4699,12 @@
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 261
+=======
+        257
+      ],
+      "OverwriteOutputs": false,
+      "DebugActionIndex": 258
+>>>>>>> parent of a7fc88f0 (update)
     }
   ],
   "FileSignatures": [
@@ -4171,9 +4877,6 @@
     },
     {
       "File": "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.pdb"
-    },
-    {
-      "File": "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.pdb"
     },
     {
       "File": "C:/GitHub/GameJaringan/ProjectGJ/GameJaringan/Library/Bee/PlayerScriptAssemblies/Unity.Burst.pdb"
@@ -4557,7 +5260,11 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
+<<<<<<< HEAD
           "Player": 261
+=======
+          "Player": 258
+>>>>>>> parent of a7fc88f0 (update)
         }
 ,  "DefaultNodes": [
     0
