@@ -11,11 +11,14 @@ GameObject:
   - component: {fileID: 997888428396799534}
   - component: {fileID: 8101144009799623171}
   - component: {fileID: 96080162889538504}
-  - component: {fileID: 834721632729903860}
-  - component: {fileID: 2209432627103957084}
-  - component: {fileID: 1092520601441114150}
-  - component: {fileID: 660422926719735037}
-  - component: {fileID: 1412954522496916219}
+  - component: {fileID: 9177820772015643060}
+  - component: {fileID: 6521513103639995913}
+  - component: {fileID: 1107755262824801016}
+  - component: {fileID: 3219480929889753472}
+  - component: {fileID: 5597167285790084605}
+  - component: {fileID: 7061787882800638223}
+  - component: {fileID: 1201557573391140630}
+  - component: {fileID: 6728915079009423212}
   m_Layer: 0
   m_Name: Karakter-Baju biru
   m_TagString: Untagged
@@ -111,7 +114,58 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &834721632729903860
+--- !u!114 &9177820772015643060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227708333517529915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 5597167285790084605}
+  - {fileID: 7061787882800638223}
+  - {fileID: 1201557573391140630}
+  - {fileID: 6728915079009423212}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6521513103639995913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227708333517529915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd16edc040881a3469d56daae9ed2d7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redShirtCharacter: {fileID: 4227708333517529915}
+  blueShirtCharacter: {fileID: 4227708333517529915}
+  virtualCameraRed: {fileID: 0}
+  virtualCameraBlue: {fileID: 0}
+  panelSetting: {fileID: 0}
+  musicVolumeSlider: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  timerText: {fileID: 0}
+  losePanel: {fileID: 0}
+  winnerPanel: {fileID: 0}
+  gameDuration: 60
+  moveSpeed: 15
+  sprintMultiplier: 2
+--- !u!61 &1107755262824801016
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +197,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.6731277}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -154,9 +208,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.03, y: 5.5237436}
+  m_Size: {x: 7.03, y: 8.87}
   m_EdgeRadius: 0
---- !u!50 &2209432627103957084
+--- !u!50 &3219480929889753472
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -171,7 +225,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -182,8 +236,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &1092520601441114150
+  m_Constraints: 0
+--- !u!114 &5597167285790084605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,22 +246,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4227708333517529915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e7cb724808c322458aa4d15f5035fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 660422926719735037}
-  - {fileID: 1412954522496916219}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
---- !u!114 &660422926719735037
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 1
+  m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &7061787882800638223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,8 +265,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35144820bcc25444bb8f0fd767d9423e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SmoothingDelay: 5
---- !u!114 &1412954522496916219
+  SmoothingDelay: 2
+--- !u!114 &1201557573391140630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227708333517529915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 1
+    SynchronizeType: 2
+    Name: Speed
+  m_SynchronizeLayers:
+  - SynchronizeType: 2
+    LayerIndex: 0
+--- !u!114 &6728915079009423212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

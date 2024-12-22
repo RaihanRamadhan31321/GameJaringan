@@ -23,6 +23,11 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
     public InputField NamaRoomInputField;
     public InputField MaxPlayersInputField; // Input Field untuk Max Players
 
+    [Header("Daftar Pemain di Room")]
+    public GameObject daftarPemainContainer; // Parent untuk daftar nama pemain
+    public GameObject namaPemainPrefab; // Prefab Text untuk nama pemain
+
+
     [Header("Daftar Room Panel")]
     public GameObject DaftarRoomPanel;
     public GameObject daftarEntriRoomPrefab;
@@ -116,8 +121,11 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
 
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = (byte)maxPlayers;
+        roomOptions.IsVisible = true; // Room dapat ditemukan
+        roomOptions.IsOpen = true;   // Room terbuka untuk pemain lain
 
         PhotonNetwork.CreateRoom(NamaRoom, roomOptions);
+
     }
 
     public override void OnConnected()
@@ -184,7 +192,7 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         if (roomInfo != null)
         {
             namaRoomJoinText.text = "Room: " + roomName;
-            infoPlayerJoinText.text = "Players: " + roomInfo.PlayerCount + " /" + roomInfo.MaxPlayers;
+            infoPlayerJoinText.text = "Players: " + roomInfo.PlayerCount + " / " + roomInfo.MaxPlayers;
         }
         else
         {
@@ -199,6 +207,7 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         ActivatePanel(JoinRoomPanel.name);
     }
 
+
     public void OnJoinRoomByNameClicked()
     {
         string roomName = InputNamaRoomJoin.text;
@@ -211,16 +220,22 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
             return;
         }
 
-        PhotonNetwork.JoinRoom(roomName);
-        PhotonNetwork.LoadLevel("GamePlay");
+        // Coba bergabung ke room menggunakan PhotonNetwork.JoinRoom
+        PhotonNetwork.JoinRoom(roomName, null);
+    }
 
+    public override void OnJoinedRoom()
+    {
+        Debug.Log("Berhasil bergabung dengan room: " + PhotonNetwork.CurrentRoom.Name);
+        OnShowJoinRoomPanel(PhotonNetwork.CurrentRoom.Name); // Perbarui UI untuk room
+        UpdatePlayerList(); // Perbarui daftar pemain
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
-        Debug.LogError("Gagal bergabung dengan Room: " + message);
+        Debug.LogWarning("Gagal bergabung dengan room: " + message);
         InputNamaRoomJoin.text = "";
-        InputNamaRoomJoin.placeholder.GetComponent<Text>().text = "Room Tidak Ada!";
+        InputNamaRoomJoin.placeholder.GetComponent<Text>().text = "Room Tidak Ditemukan!";
         InputNamaRoomJoin.placeholder.GetComponent<Text>().color = Color.red;
     }
 
@@ -240,11 +255,8 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
             Debug.Log("Master Client memulai permainan. Memuat scene GamePlay...");
             PhotonNetwork.LoadLevel("GamePlay");
         }
-        else
-        {
-            Debug.LogWarning("Hanya Master Client yang dapat memulai permainan!");
-        }
     }
+
 
     public override void OnCreatedRoom()
     {
@@ -253,17 +265,6 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         OnShowJoinRoomPanel(PhotonNetwork.CurrentRoom.Name);
     }
 
-    public override void OnJoinedRoom()
-    {
-        Debug.Log("Bergabung dengan room: " + PhotonNetwork.CurrentRoom.Name);
-        ActivatePanel(JoinRoomPanel.name);
-        UpdatePlayerInfo();
-
-        if (PhotonNetwork.IsMasterClient)
-        {
-            Debug.Log("Master Client: Menunggu pemain lain.");
-        }
-    }
 
     public void OnSoloModeButtonClicked()
     {
@@ -282,6 +283,42 @@ public class ManajerJaringan : MonoBehaviourPunCallbacks
         {
             infoPlayerJoinText.text = "Players: 0 / 0";
         }
+    }
+
+    private void UpdatePlayerList()
+    {
+        // Bersihkan daftar sebelumnya
+        foreach (Transform child in daftarPemainContainer.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Tambahkan nama pemain saat ini
+        foreach (var player in PhotonNetwork.PlayerList)
+        {
+            GameObject namaPemainObj = Instantiate(namaPemainPrefab, daftarPemainContainer.transform);
+            Text namaPemainText = namaPemainObj.GetComponent<Text>();
+            namaPemainText.text = player.NickName;
+        }
+    }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        Debug.Log(newPlayer.NickName + " bergabung ke room.");
+        UpdatePlayerList();
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        Debug.Log(otherPlayer.NickName + " keluar dari room.");
+        UpdatePlayerList();
+    }
+
+    private PhotonView photonView;
+
+    private void Awake()
+    {
+        photonView = GetComponent<PhotonView>();
     }
 
     public void OnShowRoomListButtonClicked()

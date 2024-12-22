@@ -27,13 +27,14 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Demos.dll:
-    - Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.SmoothSyncMovement
     PhotonUnityNetworking.dll:
+    - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbody2DView
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
@@ -69,8 +70,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -151,10 +154,16 @@ ScriptsOnlyBuild:
     methodName: OnStartGameButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
+    methodName: OnConnectedToMaster
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
     methodName: OnStartSoloGameButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: OnJoinRoomByNameClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: ManajerJaringan
+    methodName: OnJoinedRoom
   - assembly: Assembly-CSharp
     fullTypeName: ManajerJaringan
     methodName: ActivatePanel
@@ -224,15 +233,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18210}
     - Class: 114
+      Script: {instanceID: 18238}
+    - Class: 114
       Script: {instanceID: 18396}
     - Class: 114
       Script: {instanceID: 18454}
     - Class: 114
+      Script: {instanceID: 18666}
+    - Class: 114
       Script: {instanceID: 19318}
+    - Class: 114
+      Script: {instanceID: 19364}
     - Class: 114
       Script: {instanceID: 20490}
     - Class: 114
       Script: {instanceID: 20560}
+    - Class: 114
+      Script: {instanceID: 21184}
     - Class: 114
       Script: {instanceID: 21376}
     - Class: 114
@@ -244,7 +261,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22892}
     - Class: 114
+      Script: {instanceID: 22900}
+    - Class: 114
       Script: {instanceID: 24352}
+    - Class: 114
+      Script: {instanceID: 24804}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -337,6 +358,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22892}
     - Class: 114
+      Script: {instanceID: 22900}
+    - Class: 114
       Script: {instanceID: 24352}
     - Class: 114
       Script: {instanceID: 24804}
@@ -406,8 +429,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16786}
     - Class: 114
-      Script: {instanceID: 16882}
-    - Class: 114
       Script: {instanceID: 17002}
     - Class: 114
       Script: {instanceID: 18120}
@@ -456,9 +477,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 25390}
     - Class: 114
-      Script: {instanceID: 33452}
+      Script: {instanceID: 31356}
     - Class: 114
-      Script: {instanceID: 33458}
+      Script: {instanceID: 31362}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1694,7 +1715,7 @@ ScriptsOnlyBuild:
     className: NavMeshModifierVolume
   - hash:
       serializedVersion: 2
-      Hash: 42514da98030e587cf51ba4e31136729
+      Hash: 23218cad35fb5e833a41069229aa531c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ManajerJaringan
