@@ -949,7 +949,6 @@ GameObject:
   - component: {fileID: 6092782466054197539}
   - component: {fileID: 1770884414109214031}
   - component: {fileID: 2623016507306765503}
-  - component: {fileID: 1530260092867742742}
   - component: {fileID: 5875273213671338942}
   - component: {fileID: 6901525153234051865}
   - component: {fileID: 393165857414858556}
@@ -1124,29 +1123,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1530260092867742742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3926102547734112975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd16edc040881a3469d56daae9ed2d7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  redShirtPrefab: {fileID: 3926102547734112975}
-  virtualCamera: {fileID: 7009190228672172497}
-  panelSetting: {fileID: 5055728070161176682}
-  musicVolumeSlider: {fileID: 7680778001862177926}
-  backgroundMusic: {fileID: 8801154335356794264}
-  timerText: {fileID: 2947155918588923159}
-  losePanel: {fileID: 6700182664451606694}
-  winnerPanel: {fileID: 7044743659615266022}
-  gameDuration: 60
-  moveSpeed: 15
-  sprintMultiplier: 2
 --- !u!114 &5875273213671338942
 MonoBehaviour:
   m_ObjectHideFlags: 0

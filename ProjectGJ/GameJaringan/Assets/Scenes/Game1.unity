@@ -5015,6 +5015,30 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5440841808956032801, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: losePanel
+      value: 
+      objectReference: {fileID: 803425164}
+    - target: {fileID: 5440841808956032801, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 1423130988}
+    - target: {fileID: 5440841808956032801, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: winnerPanel
+      value: 
+      objectReference: {fileID: 1841416314}
+    - target: {fileID: 5440841808956032801, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: panelSetting
+      value: 
+      objectReference: {fileID: 1635094288}
+    - target: {fileID: 5440841808956032801, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 2099647354}
+    - target: {fileID: 5440841808956032801, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      propertyPath: musicVolumeSlider
+      value: 
+      objectReference: {fileID: 2074051611}
     - target: {fileID: 7966221548563870328, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -5037,6 +5061,7 @@ PrefabInstance:
     - {fileID: 4078518724905137112, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
     - {fileID: 305380202647519169, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
     - {fileID: 3615635383027143748, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+    - {fileID: 5440841808956032801, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1533407651079790633, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
@@ -5046,6 +5071,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2352457695407448713, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2099647353}
+    - targetCorrespondingSourceObject: {fileID: 2352457695407448713, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2099647360}
     - targetCorrespondingSourceObject: {fileID: 8953656228998768030, guid: 377653d75aef8ff4288e64b4a06a0a0d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2099647354}
@@ -5196,6 +5224,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &2099647360
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099647351}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2109010852
 GameObject:
   m_ObjectHideFlags: 0
